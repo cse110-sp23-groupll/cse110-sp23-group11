@@ -8,7 +8,7 @@
 - Hunter Trieu
 - Sophia Yu
 - Seonghun Oh
-- Thanh Nyugen
+- Thanh Nguyen
 - Chang Shu
 - Angelia Zhang
 

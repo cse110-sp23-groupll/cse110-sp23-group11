@@ -23,6 +23,7 @@
 - [Sophia Yu](https://syu125.github.io/user-page/)
     - A 2nd year CS major from Warren College. She loves running and baking, and her favorite language is C++.
 - [Thanh Nguyen](https://thanhdiemnguyen.github.io/CSE110Project/)
+    - A 3rd year CS major from Revelle College. She loves travelling, and her favorite language is C++.
 - [Cathy Shu](https://cathyyyyy123.github.io/CSE110-lab1/)
     - She is a 2nd Math-CS major from ERC College.
 

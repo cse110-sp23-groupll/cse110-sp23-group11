@@ -12,7 +12,7 @@
 
 - [Angelia Zhang](https://angeliazddl.github.io/CSE110_SP23/)
 - [Vincent Vo](https://vdvo1029.github.io/cse110/)
-    -A 2nd year CS major from Warren. He chose the wrong major.
+    - A 2nd year CS major from Warren. He chose the wrong major.
 - [Harish Vasanth](https://hnvultimate123.github.io/Introduction/)
 - [Hunter Trieu](https://httrieu.github.io/CSE110-Project/#my-skills)
     - A 2nd CS major from Warren College. He has a love for gaming and reading, and his favorite programming language is C. 

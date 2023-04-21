@@ -20,4 +20,6 @@
 - Seonghun Oh
 - Sophia Yu
 - [Thanh Nguyen](https://thanhdiemnguyen.github.io/CSE110Project/)
-- Cathy Shu
+- [Cathy Shu](https://cathyyyyy123.github.io/CSE110-lab1/)
+    - She is a 2nd Math-CS major from ERC College.
+

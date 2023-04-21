@@ -1,4 +1,4 @@
 # skateboard->right foot
 Team color:  
-Logo:
+Logo:  
 Mascot: _(:з」∠)_

@@ -20,7 +20,8 @@
 - [Alex Wu](https://pei-lu.github.io/CSE-110/)
     - A 2nd year ECE major form warren College. He is a game lover, always want to crate his own game   
 - [Seonghun Oh](https://seonghunn.github.io/CSE110/)
-- Sophia Yu
+- [Sophia Yu](https://syu125.github.io/user-page/)
+    - A 2nd year CS major from Warren College. She loves running and baking, and her favorite language is C++.
 - [Thanh Nguyen](https://thanhdiemnguyen.github.io/CSE110Project/)
 - [Cathy Shu](https://cathyyyyy123.github.io/CSE110-lab1/)
     - She is a 2nd Math-CS major from ERC College.

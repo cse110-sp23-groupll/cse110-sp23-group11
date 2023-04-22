@@ -14,7 +14,7 @@
 - [Vincent Vo](https://vdvo1029.github.io/cse110/)
     - A 2nd year CS major from Warren. He doesn't want to work for faang.
 - [Harish Vasanth](https://hnvultimate123.github.io/Introduction/)
-    - A 2nd year CS mjor from Revelle. He loves playing video games (Nintendo good) and his favorite languages are C/C++.
+    - A 2nd year CS major from Revelle. He loves playing video games (Nintendo good) and his favorite languages are C/C++.
 - [Hunter Trieu](https://httrieu.github.io/CSE110-Project/#my-skills)
     - A 2nd year CS major from Warren College. He has a love for gaming and reading, and his favorite programming language is C. 
 - [Jennifer Yu](https://jhxyjhxy.github.io/cse110/)

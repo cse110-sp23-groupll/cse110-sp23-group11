@@ -1,0 +1,60 @@
+body {
+	background-color: black;
+}
+
+.container {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.eight-ball-container {
+	display: inline-block;
+	position: relative;
+}
+
+#eight-ball {
+	width: 400px;
+	height: 400px;
+}
+
+button {
+	font-size: 24px;
+	padding: 10px 20px;
+	cursor: pointer;
+	color: white;
+	background-color: #333;
+	border: none;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button:hover {
+	background-color: #444;
+}
+
+#answer {
+	font-size: 24px;
+	margin-top: 20px;
+	color: white;
+}
+
+.shake {
+	animation: shake 1s ease-in-out;
+}
+
+@keyframes shake {
+	0% { transform: translateY(0); }
+	25% { transform: translateY(-10px); }
+	50% { transform: translateY(0); }
+	75% { transform: translateY(10px); }
+	100% { transform: translateY(0); }
+}

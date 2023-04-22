@@ -11,6 +11,7 @@
 ## Team Members:
 
 - [Angelia Zhang](https://angeliazddl.github.io/CSE110_SP23/)
+    - A 4th year Math-CS major from Revelle. She loves cat and thrilling video games!
 - [Vincent Vo](https://vdvo1029.github.io/cse110/)
     - A 2nd year CS major from Warren. He doesn't want to work for faang.
 - [Harish Vasanth](https://hnvultimate123.github.io/Introduction/)

@@ -37,6 +37,7 @@ function shake() {
 	// Display the answer
 	var answer = document.getElementById("answer");
 	answer.innerHTML = randomAnswer;
+	answer.classList.add("animated", "rotateIn");
 
 	// Speak the answer
 	var speech = new SpeechSynthesisUtterance();
@@ -45,8 +46,11 @@ function shake() {
 
 	// Remove the wobble animation
   	// Remove the wobble animation after 1 second
-	setTimeout(function() {
+	answer.classList.remove("hide");
+	setTimeout(function () {
 		eightball.classList.remove("shake");
-	}, 1000);
+		answer.classList.remove("animated", "rotateIn");
+		answer.classList.add("hide");
+	}, 2000);
 }
 

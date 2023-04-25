@@ -95,7 +95,6 @@
 		font-size: 26px;
 		font-weight: bolder;
 		margin: 20px auto;
-		z-index: 1;
 		position: absolute;
 		color: #94dff9;
 		top: 35%;;
@@ -103,6 +102,10 @@
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		z-index: 1;
+		padding-right: 10px;
+		width: 200px;
+		padding-left: 10px;
 	}
 
 	@keyframes shake {

@@ -1,4 +1,4 @@
-#  4/26/2023 Kickoff Meeting - 4:00pm to 5:20pm
+#  5/3/2023 Kickoff Meeting - 4:00pm to 5:20pm
 
 ## Members Present
 - Junyi Wu

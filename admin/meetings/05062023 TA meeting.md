@@ -4,4 +4,7 @@
 1. Localstorage
 2. IndexDB
 ## things we need to work on for 07/06/2023
-- user persona
+### user persona
+- Who are they?
+- What is their main goal?
+- What is their main barrier?

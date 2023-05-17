@@ -1,4 +1,4 @@
-name: CI
+name: EsLint Test
 on: push
 jobs:
   build:

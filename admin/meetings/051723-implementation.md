@@ -39,3 +39,5 @@ No members absent for this meeting! :)
 
 ## Topics for Future Meetings
 - Continue working on the implementation
+- Add to ADRs as we go
+- Finalize any other CI/CD pipeline things

@@ -15,8 +15,7 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-      - name : Try install something
-        run : npm init
+    
 
       - name: Set up Node.js
         uses: actions/setup-node@v1

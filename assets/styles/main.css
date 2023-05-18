@@ -1,0 +1,10 @@
+html {
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+	background-position: top left 25%;
+}
+/* h1 {
+  border: 5px solid rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+} */

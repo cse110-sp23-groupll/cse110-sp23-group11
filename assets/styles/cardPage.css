@@ -1,3 +1,9 @@
+html {
+  background-image: url(/assets/images/bg2.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
 h1 {
   position: relative;
   text-align: center;

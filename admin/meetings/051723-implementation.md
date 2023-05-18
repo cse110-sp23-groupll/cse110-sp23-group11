@@ -34,6 +34,8 @@ No members absent for this meeting! :)
 
 ### Implementation stuff
 - Sophia + Hunter generated the card assets, found in /source/assets folder
+- As we go through implementation we will add our own ADRs from each group or tell Alex if we made any big decisions
+- We will add issues as we go along as well
 
 ## Topics for Future Meetings
 - Continue working on the implementation

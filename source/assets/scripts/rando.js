@@ -5,7 +5,8 @@ function shake() {
 	// Get the magic 8 ball element
 	var eightBall = document.getElementById("eight-ball");
 
-    eightBall.classList.add("shake");
+        eightBall.classList.add("shake");
+	// cool comment
 	
 	// Shake the 8 ball
 	var interval = setInterval(function() {

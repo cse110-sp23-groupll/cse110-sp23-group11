@@ -3,6 +3,7 @@ function shake() {
 	document.getElementById("shake-button").style.display = "none";
 	
 	// Get the magic 8 ball element
+	// I love documentation
 	var eightBall = document.getElementById("eight-ball");
 
         eightBall.classList.add("shake");

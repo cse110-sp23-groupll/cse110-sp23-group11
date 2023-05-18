@@ -36,6 +36,7 @@ No members absent for this meeting! :)
 - Sophia + Hunter generated the card assets, found in /source/assets folder
 - As we go through implementation we will add our own ADRs from each group or tell Alex if we made any big decisions
 - We will add issues as we go along as well
+- Seonghun made the recipe generation function!
 
 ## Topics for Future Meetings
 - Continue working on the implementation

@@ -1,10 +1,11 @@
-html {
-  background-image: url("assets/images/background.png");
+body {
+  background-image: url("../assets/images/background.png");
   background-size: cover;
-	background-position: top left 25%;
+	background-repeat: no-repeat;
+  background-position: center center;
 }
-/* h1 {
-  border: 5px solid rgb(255, 255, 255);
+h1 {
+  border: 5px solid rgb(240, 154, 154);
   position: relative;
   text-align: center;
-} */
+}

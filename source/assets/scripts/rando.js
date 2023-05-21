@@ -1,5 +1,5 @@
 function shake() {
-	// Hide the shake button
+	// Hide the shake buttoon
 	document.getElementById("shake-button").style.display = "none";
 	
 	// Get the magic 8 ball element

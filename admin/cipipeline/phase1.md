@@ -7,7 +7,8 @@ We currently are using the Github Super Linter workflow to lint the code base on
 
 ### Phase 1 Diagram
 ![phase 1 diagram](phase1.drawio.png)
-On push, the super linter is run to beautify any code. Then the linter outputs its results and we are able to fix any errors. Then, we are able to update our code again to ensure our code base is error-free.
+<br>
+**Explanation**: On push, the super linter is run to beautify any code. Then the linter outputs its results and we are able to fix any errors. Then, we are able to update our code again to ensure our code base is error-free.
 
 ## Blockers
 - Team does not have much previous experience with Github Actions and workflows

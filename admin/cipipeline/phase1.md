@@ -6,7 +6,7 @@
 We currently are using the Github Super Linter workflow to lint the code base on push. The goal of running the linter is to prevent basic errors and keep our code base somewhat standardized.
 
 ### Phase 1 Diagram
-
+![phase 1 diagram](phase1.drawio.png)
 
 ## Blockers
 - Team does not have much previous experience with Github Actions and workflows

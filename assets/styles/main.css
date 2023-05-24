@@ -1,5 +1,5 @@
 html {
-  background-image: url(/assets/images/bg1.jpg);
+  background-image: url(./assets/images/bg1.jpg);
   background-size: auto;
   background-repeat: repeat;
 }
@@ -27,7 +27,7 @@ body {
   min-width: 35vh;
   width: fit-content;
   border: 60px solid transparent;
-  border-image-source: url(/assets/images/border1.jpg); /* Replace with your custom border image URL */
+  border-image-source: url(./assets/images/border1.jpg); /* Replace with your custom border image URL */
   border-image-slice: 100; /* Adjust as needed */
   border-image-repeat:round;
   align-items: center;

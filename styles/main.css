@@ -41,3 +41,14 @@ button {
   min-height: 5vh;
   min-width: 12vh;
 }
+
+.qa-section{
+  background-color: #fffcc9;
+  position: absolute;
+  height: fit-content;
+  text-align: center;
+  border-top: 6px solid #da8e1d;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

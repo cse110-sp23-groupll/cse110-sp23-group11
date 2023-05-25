@@ -1,5 +1,5 @@
 html {
-  background-image: url(/images/bg2.jpg);
+  background-image: url(/assets/images/bg2.jpg);
   background-size: auto;
   background-repeat: repeat;
 }
@@ -7,8 +7,4 @@ html {
 h1 {
   position: relative;
   text-align: center;
-}
-
-nav {
-  text-align: right;
 }

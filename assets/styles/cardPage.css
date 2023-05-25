@@ -1,0 +1,14 @@
+html {
+  background-image: url(/cse110-sp23-group11/images/bg2.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+}

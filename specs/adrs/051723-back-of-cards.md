@@ -1,10 +1,10 @@
 # design of the back of each card
 ## Context and Problem Statement
-* Choosing between designs for the final card design
+* Choosing between two designs for the final card 
 
 ## Considered Options
 * Blue
-> ![Blue Back](cse110-sp23-group11/source/assets/FinishedTarotCards/BacksideofTarotCard2.png)
+> ![Blue Back](./source/assets/FinishedTarotCards/BacksideofTarotCard2.png)
 * Brown
 > ![Brown Back](cse110-sp23-group11/source/assets/FinishedTarotCards/TarotCardBack.png)
 * both options are found in `source/assets/`

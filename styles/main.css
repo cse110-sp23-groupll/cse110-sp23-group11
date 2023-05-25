@@ -26,6 +26,7 @@ body {
   min-height: 25vh;
   min-width: 35vh;
   width: fit-content;
+  height: fit-content;
   border: 60px solid transparent;
   border-image-source: url(/cse110-sp23-group11/images/border1.jpg); /* Replace with your custom border image URL */
   border-image-slice: 100; /* Adjust as needed */

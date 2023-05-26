@@ -16,4 +16,14 @@ describe('Basic user flow for Website', () => {
       let textContent = await page.evaluate(cont => cont.textContent, content)
       expect(textContent).toBe(txt);
     }, 2500);
+
+    // Check to make sure that clicking on the cards flips it THIS IS NOT WORKING
+    it('Clicking each card should flip it', async () => {
+      console.log('Checking the first card...');
+      await page.click('div.card:nth-child(1) > div:nth-child(1)');
+      const cardClicked = await page.evaluate(() => {
+        return !!document.querySelector('div.card.now.is-flipped') 
+      });
+      expect(cardClicked).toBe(true);
+    }, 2500);
 });

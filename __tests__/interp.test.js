@@ -8,8 +8,9 @@ describe('Basic user flow for Website', () => {
     it('Clicking the "RECIPE" button should extend the page', async () => {
       let txt = "RECIPE CONTENT";
       console.log('Checking the "RECIPE" button...');
+      // finds button and clicks it
       await page.$eval( '#expand-btn', form => form.click() );
-      // Once you have the innerText property, use innerText.jsonValue() to get the text value of it
+      // finds the text of the page that is extended
       await page.waitForSelector('#content')
       let content = await page.$('#content')
       let textContent = await page.evaluate(cont => cont.textContent, content)

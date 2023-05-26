@@ -1,5 +1,18 @@
 describe('Basic user flow for Website', () => {
-    // First, visit the lab 8 website
+    // First, visit the interpretation page
     beforeAll(async () => {
-      await page.goto('http://127.0.0.1:5500/index.html');
+      await page.goto('http://127.0.0.1:5502/interpretation.html');
     });
+
+    // Check to make sure that the 'recipes' button extends the page
+    it('Clicking the "RECIPE" button should extend the page', async () => {
+      let txt = "RECIPE CONTENT";
+      console.log('Checking the "RECIPE" button...');
+      await page.$eval( '#expand-btn', form => form.click() );
+      // Once you have the innerText property, use innerText.jsonValue() to get the text value of it
+      await page.waitForSelector('#content')
+      let content = await page.$('#content')
+      let textContent = await page.evaluate(cont => cont.textContent, content)
+      expect(textContent).toBe(txt);
+    }, 2500);
+});

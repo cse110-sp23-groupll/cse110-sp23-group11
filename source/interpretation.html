@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tarot Card Flip</title>
+	<link rel="stylesheet" type="text/css" href="interp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:wght@200&display=swap">
+
+</head>
+<body>
+	<header>
+        <button class="exit">EXIT</button>
+	</header>
+    <main>
+        <div class="red">
+            <div class="container">
+                <button class="newReading">New Reading</button>
+            </div>
+            <h1>Results</h1>
+            <h2>Interpretation text here</h2>
+            <div class="card-container">
+                <div class="card now">
+                    <div class="card-front">
+                        <img src="./image/image_now.png" alt="The Pool">
+                        <h3>name of card</h2>
+                        <h4>description</h3>  
+                    </div>
+                    <div class="card-back">
+                        <h3>Name of card</h2>
+                        <h4>Card of [content]</h3>
+                        <p>Interpretation: [content].</p>
+                    </div>
+                </div>
+                <div class="card future">
+                    <div class="card-front">
+                        <img src="./image/image_future.png" alt="Temperance">
+                        <h3>name of card</h2>
+                        <h4>description</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Name of card</h2>
+                        <h4>Card of [content]</h3>
+                        <p>Interpretation: [content].</p>
+                    </div>
+                </div>
+                <div class="card past">
+                    <div class="card-front">
+                        <img src="./image/image_past.png" alt="Temperance">
+                        <h3>name of card</h2>
+                        <h4>description</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>The Hermit</h2>
+                        <h4>Card of [content]</h3>
+                        <p>Interpretation: [content].</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-container">
+                <button id="expand-btn" class="recipe-btn">RECIPE</button>
+            </div>   
+        </div>
+        <div id="content" class="recipe-content">RECIPE CONTENT</div>
+    </main>
+    <script src="interpPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+html {
+  background-image: url(/cse110-sp23-group11/images/bg1.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 1.5cm;
+}
+
+p {
+  margin-top: 0.5cm;
+  position: relative;
+}
+
+body {
+  display: flex;
+  margin:auto;
+  margin-top: 5cm;
+  justify-content: center;
+}
+.content {
+  position: relative;
+  background-color: #ffffff;
+  min-height: 25vh;
+  min-width: 35vh;
+  width: fit-content;
+  height: fit-content;
+  border: 60px solid transparent;
+  border-image-source: url(/cse110-sp23-group11/images/border1.jpg); /* Replace with your custom border image URL */
+  border-image-slice: 100; /* Adjust as needed */
+  border-image-repeat:round;
+  align-items: center;
+  text-align: center;
+	overflow: hidden;
+}
+button {
+  margin-top: 1cm;
+  margin-bottom: 1.2cm;
+  background-color: #1feebe;
+  min-height: 5vh;
+  min-width: 12vh;
+}
+
+.qa-section{
+  background-color: #fffcc9;
+  position: absolute;
+  height: fit-content;
+  text-align: center;
+  border-top: 6px solid #da8e1d;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

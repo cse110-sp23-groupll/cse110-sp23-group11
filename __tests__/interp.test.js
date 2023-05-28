@@ -1,7 +1,7 @@
 describe('Basic user flow for Website', () => {
     // First, visit the interpretation page
     beforeAll(async () => {
-      await page.goto('http://127.0.0.1:5502/interpretation.html');
+      await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/interpretation.html');
     });
 
     // Check to make sure that the 'recipes' button extends the page

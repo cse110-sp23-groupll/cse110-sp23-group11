@@ -1,6 +1,6 @@
 [Meet our Team!](admin/team.md)
 
-Our Project: Food themed Tarot Reading
+## Our Project: Food themed Tarot Reading
 
 This application is a tarot reading that is food themed. The application is currently a work in progress.
 

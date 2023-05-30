@@ -57,7 +57,7 @@ button {
 .qa-outer{
   background-color: #e1a851;
   position: absolute;
-  height: 10cm;
+  height: 7cm;
   padding: 10px;
   bottom: 1.8cm;
   left: 0;
@@ -66,7 +66,7 @@ button {
 .qa-inner {
   background-color:   #fffcc9;
   position: absolute;
-  height: 8.5cm;
+  height: 5.5cm;
   text-align: center;
   border-radius: 25px; /* This will round the corners */
   bottom: 1cm;

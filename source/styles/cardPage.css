@@ -10,6 +10,13 @@ main {
   text-align: center;
 }
 
+.font-with-border {
+  font-size: 60px;
+  -webkit-text-fill-color: rgb(255, 255, 255); /* Specify font color */
+  -webkit-text-stroke: 5px rgb(182, 81, 81); 
+  font-family: 'Chango', cursive;
+}
+
 h1 {
   position: relative;
   text-align: center;
@@ -41,7 +48,7 @@ nav p {
 
 .card img {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -71,4 +78,8 @@ button {
   border: #ffffff;
   color: white;
   font-size: xx-large;
+}
+
+button:hover {
+  background-color: #d96856e6;
 }

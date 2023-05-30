@@ -1,3 +1,9 @@
+html {
+  background-size: auto;
+  background-repeat: repeat;
+  background-color: rgb(164, 72, 72);
+}
+
 h1 {
   position: relative;
   text-align: center;
@@ -5,10 +11,100 @@ h1 {
 
 nav {
   text-align: right;
-  
 }
 
 nav p {
   color: white;
   font-size: large;
+}
+
+.font-with-border {
+  font-size: 60px;
+  -webkit-text-fill-color: rgb(255, 255, 255); /* Specify font color */
+  -webkit-text-stroke: 5px rgb(182, 81, 81); 
+  font-family: 'Chango', cursive;
+}
+
+main {
+  background-color: rgb(218, 159, 159);
+  border-radius: 5px;
+}
+
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 18%;
+  margin: 1%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f8f9fa;
+} */
+
+.card-container {
+  /* image 3 */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: 3.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.card {
+  width: 40vh;
+  height: 30vh;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-back {
+    position: absolute;
+    width: 25vh;
+    height: 35vh;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.card img {
+    width: 25vh;
+    height: 35vh;
+    margin-top: 5vh;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
 }

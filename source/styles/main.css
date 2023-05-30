@@ -1,12 +1,21 @@
-html {
-  background-image: url(/cse110-sp23-group11/source/images/bg1.jpg);
-  background-size: auto;
-  background-repeat: repeat;
+.head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  color: #ffffff;
+  background-color: #bb4b4b;
 }
+
 h1 {
   position: relative;
   text-align: center;
   margin-top: 1.5cm;
+}
+
+h3 {
+  color: black;
 }
 
 p {
@@ -14,7 +23,7 @@ p {
   position: relative;
 }
 
-body {
+main {
   display: flex;
   margin:auto;
   margin-top: 5cm;
@@ -27,29 +36,50 @@ body {
   min-width: 35vh;
   width: fit-content;
   height: fit-content;
-  border: 60px solid transparent;
-  border-image-source: url(/cse110-sp23-group11/source/images/border1.jpg); /* Replace with your custom border image URL */
-  border-image-slice: 100; /* Adjust as needed */
-  border-image-repeat:round;
+  border: 10px solid transparent;
+  border-radius: 20px;
   align-items: center;
   text-align: center;
 	overflow: hidden;
 }
+
 button {
   margin-top: 1cm;
   margin-bottom: 1.2cm;
-  background-color: #1feebe;
+  background-color: #acf0e0;
+  text-align: center;
   min-height: 5vh;
   min-width: 12vh;
+  border-radius: 20px;
+  border: #ffffff;
 }
 
-.qa-section{
-  background-color: #fffcc9;
+.qa-outer{
+  background-color: #e1a851;
   position: absolute;
-  height: fit-content;
+  height: 10cm;
+  padding: 10px;
+  bottom: 1.8cm;
+  left: 0;
+  right: 0; 
+}
+.qa-inner {
+  background-color:   #fffcc9;
+  position: absolute;
+  height: 8.5cm;
   text-align: center;
-  border-top: 6px solid #da8e1d;
+  border-radius: 25px; /* This will round the corners */
+  bottom: 1cm;
+  left: 0.8cm;
+  right: 0.8cm;
+}
+
+.foot {
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: left;
+  color: #ffffff;
+  background-color: #bb4b4b;
 }

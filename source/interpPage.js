@@ -1,7 +1,32 @@
-const { range } = require("express/lib/request");
+// const { range } = require("express/lib/request");
 
 // Flip cards
 const cards = document.querySelectorAll(".card");
+
+function setCardProp() {
+  let tempNum = [1, 2, 3];
+  const interp = '{"Name": "Card 1", "Content": "coolContent1", "Interp1": "dummy text1", "Interp2": "dummy text2",  "Interp3": "dummy text3"}\n{ "Name": "Card 2", "Content": "coolContent2", "Interp1": "dummy text4", "Interp2": "dummy text5", "Interp3": "dummy text6"}\n{"Name": "Card 3", "Content": "coolContent3", "Interp1": "dummy text7", "Interp2": "dummy text8", "Interp3": "dummy text9"}';
+  const jsonObjsSts = interp.split("\n");
+  let jsonObjs = [];
+
+  for (const obj of jsonObjsSts) {
+    jsonObjs.push(JSON.parse(obj));
+  }
+
+  for (const card of cards) {
+    let index = Math.floor(Math.random() * jsonObjs.length);
+    let randomInterp = Math.floor(Math.random() * 3) + 1;
+    let backCard = card.querySelector('.card-back')
+    card.querySelector('h3').innerText = jsonObjs[index]["Name"];
+    backCard.querySelector('h3').innerText = jsonObjs[index]["Name"];
+    backCard.querySelector('h4').innerText = jsonObjs[index]["Content"];
+    backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
+    tempNum.splice(index, 1);
+    jsonObjs.splice(index, 1);
+  }
+}
+
+setCardProp();
 
 function flipCard() {
   this.classList.toggle("is-flipped");
@@ -25,11 +50,3 @@ expandButton.addEventListener('click', () => {
     });
   }
 });
-
-const tempNum = [1, 2, 3];
-const interp = JSON.parse('{"Name": "Card 1", "Interp1": "dummy text1", "Interp2": "dummy text2",  "Interp3": "dummy text3"}, { "Name": "Card 2", "Interp1": "dummy text4", "Interp2": "dummy text5", "Interp3": "dummy text6"}, {"Name": "Card 3", "Interp1": "dummy text7", "Interp2": "dummy text8", "Interp3": "dummy text9"}')
-for (const card of cards) {
-  let index = Math.floor(Math.random() * interp.size) - 1;
-  card.querySelector('h3').innerText = interp[0]["Card" + tempNum[index]];
-  tempNum.splice(index, 1);
-}

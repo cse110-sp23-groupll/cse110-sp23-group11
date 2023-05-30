@@ -33,7 +33,7 @@ main {
   position: relative;
   background-color: #ffffff;
   min-height: 25vh;
-  min-width: 35vh;
+  min-width: 40vh;
   width: fit-content;
   height: fit-content;
   border: 10px solid transparent;
@@ -68,7 +68,7 @@ button {
   position: absolute;
   height: fit-content;
   text-align: center;
-  border-radius: 20px; /* This will round the corners */
+  border-radius: 15px; /* This will round the corners */
   bottom: 0.8cm;
   left: 0.4cm;
   right: 0.4cm;

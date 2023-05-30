@@ -12,130 +12,126 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
   <!-- <script src="assets/scripts/main.js" type="module"></script> -->
+  <script>
+    window.onload = function() {
+        var cards = document.getElementsByClassName("card");
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].addEventListener("click", function() {
+                this.classList.toggle("flipped");
+            });
+        }
+    }
+  </script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="welcome.html" title="Go to main page">EXIT</a>
+      <a href="welcome.html" title="Go to main page"><p>EXIT</p></a>
     </nav>
   </header>
   <main>
     <h1 class="font-with-border">Selected three cards</h1>
     <h1><a href="interpretation.html" title="Go to interp page">CLICK HERE FOR INTERPRETATION PAGE</a></h1>
-    <div class="card-container">
-      <div class="card 1">
-          <div class="card-back">
-              <img src="./assets/FinishedTarotCards/TarotCardBack.png">  
-          </div>
+    <div class="row">
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
       </div>
-      <div class="card 2">
-          <div class="card-back">
-              <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-          </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
       </div>
-      <div class="card 3">
-          <div class="card-back">
-              <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-          </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
       </div>
-      <div class="card 4">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
       </div>
-      <div class="card 5">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
       </div>
-      <div class="card 6">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 7">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 8">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 9">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 10">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 11">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 12">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 13">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 14">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 15">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 16">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 17">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 18">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 19">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 20">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 21">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-      <div class="card 22">
-        <div class="card-back">
-            <img src="./assets/FinishedTarotCards/TarotCardBack.png">
-        <div>
-      </div>
-
     </div>
-  </div>
+    <div class="row">
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+      <div class="card">
+        <img class="front" src="./assets/FinishedTarotCards/TarotCardBack.png" alt="Front of image 1">
+        <img class="back" src="images/image_future.png" alt="Back of image 1">
+      </div>
+    </div>
+      <button id="shuffleButton">Shuffle</button>
+    </div>
   </main>
 </body>
 </html>

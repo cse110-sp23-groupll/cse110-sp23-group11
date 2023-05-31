@@ -1,0 +1,18 @@
+[{
+    "Name": "Card 1",
+    "Interp1": "dummy text1",
+    "Interp2": "dummy text2",
+    "Interp3": "dummy text3"
+}, 
+{
+    "Name": "Card 2",
+    "Interp1": "dummy text4",
+    "Interp2": "dummy text5",
+    "Interp3": "dummy text6"
+},
+{
+    "Name": "Card 3",
+    "Interp1": "dummy text7",
+    "Interp2": "dummy text8",
+    "Interp3": "dummy text9"
+}]

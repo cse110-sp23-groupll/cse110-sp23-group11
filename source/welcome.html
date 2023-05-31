@@ -7,6 +7,10 @@
   <title>Welcome to Tarot Cards</title>
   <!-- Main Stylesheets & Scripts -->
   <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:wght@200&display=swap">
+  <!-- FullPage.js library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" />
   <style>
     html {
       background-image: url(./images/bg1.jpg);
@@ -18,38 +22,53 @@
   <!-- <script src="assets/scripts/main.js" type="module"></script> -->
 </head>
 <body>
-  <header>
-    <div class="head">
-      <h2>TAROT CARD READING</h2>
+  <div id="fullpage">
+    <div class="section">
+      <header>
+        <div class="head">
+          <h2>TAROT CARD READING</h2>
+        </div>
+      </header>
+      <main>
+        <div class="content" id="section1">
+          <h1>WELCOME</h1>
+          <p>Some quick summary of our </br> website or something</p>
+          <button>
+          <a href="card-page.html"><h3>START READING</h3></a>
+          </button>
+        </div>
+        <div class="fqa-line">
+          <span>FAQ</span>
+        </div>
+        <p>Scroll down</p>
+      </main>
     </div>
-  </header>
-  <main>
-    <div class="content">
-      <h1>Welcome</h1>
-      <p>Some quick summary of our website or something</p>
-      <button>
-      <a href="card-page.html"><h3>START READING</h3></a>
-      </button>
-    </div>
-    <div class="fqa-line">
-      <span>FQA</span>
-    </div>
-    <div class="qa-outer">
-      <!-- Q&A Section -->
-      <div class="qa-inner">
-        <h2>Q&A</h2>
-        <p>Question 1: aaaaaaaa?</p>
-        <p>Answer 1: hhhhhhh.</p>
-        <p>Question 2: bbbbbbb?</p>
-        <p>Answer 2: hhhhhhh.</p>
-        <!-- Add more Q&A pairs as needed -->
+    <div class="section">
+      <div class="qa-outer" id="section2">
+        <!-- Q&A Section -->
+        <div class="qa-inner">
+          <p>What is a Tarot card?
+          <br><br>What is a Tarot card reading?
+          <br><br>How do I begin?
+          <br><br>What if I don't like my fortune?</p>
+          <!-- Add more Q&A pairs as needed -->
+        </div>
       </div>
     </div>
-  </main>
+  </div>
   <footer>
     <div class="foot">
       <h2>Team11-Skateboard->Rightfoot</h2>
     </div>
   </footer>
+  <!-- FullPage.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling:true,
+      scrollHorizontally: true
+    });
+  </script>
 </body>
 </html>

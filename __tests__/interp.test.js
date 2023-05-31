@@ -41,16 +41,30 @@ describe('Basic user flow for Website', () => {
       expect(cardClicked3).toBe(true);
     }, 2500);
 
-      // Check to make sure that clicking 'New Reaading' takes the user to the right page
-      it('Clicking \'New Reading\' goes to second page', async () => {
-        console.log('Clicking the button...');
-        await page.evaluate(() => {
-          document.querySelector('body > main > div.red > div.container > button > a').click();
-        });
-        await page.waitForNavigation();
-        const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
-        const buttonClicked = await page.url();
-        expect(buttonClicked).toEqual(url);  
+    // Check to make sure that clicking 'New Reaading' takes the user to the right page
+    it('Clicking \'New Reading\' goes to second page', async () => {
+      console.log('Clicking the button...');
+      await page.evaluate(() => {
+        document.querySelector('body > main > div.red > div.container > button > a').click();
+      });
+      await page.waitForNavigation();
+      const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
+      const buttonClicked = await page.url();
+      expect(buttonClicked).toEqual(url);  
+
+    }, 5000);
+
+    // Check to make sure that clicking 'EXIT' takes the user to the start page
+    it('Clicking \'EXIT\' goes to first page', async () => {
+      console.log('Clicking the button...'); 
+      await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/interpretation.html');
+      await page.evaluate(() => {
+        document.querySelector('body > header > button > a').click(); 
+      }); 
+      await page.waitForNavigation();
+      const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html";
+      const buttonClicked = await page.url();
+      expect(buttonClicked).toEqual(url);  
   
-      }, 5000);
+    }, 5000);
 });

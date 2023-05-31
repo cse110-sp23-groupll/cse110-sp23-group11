@@ -28,7 +28,7 @@ function init(){
 
 
 /**
-@returns {Array<Object>}
+ *  @returns {Array<Object>}
 **/
 // returns random recipe from localstorage recipes data
 function getRecipeFromStorage() {

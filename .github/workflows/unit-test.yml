@@ -2,7 +2,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [ codeCoverage ]
+    branches: [ Code-Coverage ]
   pull_request:
     branches: [ main ]
 

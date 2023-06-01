@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic 8 Ball</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Sigmar&family=Vina+Sans&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+	<body>
+		<div class="stars">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
+		<main>
+			<div id="container">
+				<h1>Magic 8 Ball</h1>
+				<p id="answer"></p>
+				<img id="eightball" src="8ball.png" alt="Magic 8 Ball">
+				<input type="text" id="question" placeholder="Ask a question...">
+				<button id="submit" onclick="shake()">Ask</button>
+				<script>
+					var input = document.getElementById("question");
+					input.addEventListener("keypress", function(event) {
+					if (event.key === "Enter") {
+						event.preventDefault();
+						document.getElementById("submit").click();
+					}
+					});
+				</script>
+			</div>
+		</main>
+	</body>
+</html>

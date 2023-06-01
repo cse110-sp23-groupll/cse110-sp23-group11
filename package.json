@@ -14,6 +14,7 @@
     "jest": {
         "preset": "jest-puppeteer",
         "verbose": true,
-        "collectCoverage": true
+        "collectCoverage": true,
+        "rootDir": "../."
     }
 }

@@ -18,4 +18,4 @@ jobs:
           node-version: '18.x'
       - run: npm install --save-dev jest babel-jest @babel/core @babel/preset-env puppeteer jest-puppeteer
       - run: npm run build --if-present
-      - run: npm --coverage test ./__tests__/interp.test.js
+      - run: npm test ./__tests__/interp.test.js -- --coverage

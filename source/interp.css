@@ -28,6 +28,16 @@ header button.exit {
     color: white;
 }
 
+.exit a {
+    text-decoration: none;
+    color: white;
+  }
+
+.newReading a {
+    text-decoration: none;
+    color: black;
+}
+
 main {
     color: white;   
 }

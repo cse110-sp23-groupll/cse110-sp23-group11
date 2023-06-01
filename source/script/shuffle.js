@@ -1,26 +1,59 @@
 var cardsData = [
-    {name: "Death", src: "assets/UniformResolution/Death.png"},
-    {name: "Judgement", src: "./assets/UniformResolution/Judgement.png"},
-    {name: "Justice", src: "./assets/UniformResolution/Justice.png"},
-    {name: "Strength", src: "./assets/UniformResolution/Strength.png"},
-    {name: "WheelOfFortune", src: "./assets/UniformResolution/WheelOfFortune.png"},
-    {name: "TheWorld", src: "./assets/UniformResolution/TheWorld.png"},
-    {name: "TheTower", src: "./assets/UniformResolution/TheTower.png"},
-    {name: "TheSun", src: "./assets/UniformResolution/TheSun.png"},
-    {name: "TheStar", src: "./assets/UniformResolution/TheStar.png"},
-    {name: "TheMoon", src: "./assets/UniformResolution/TheMoon.png"},
-    {name: "TheMagician", src: "./assets/UniformResolution/TheMagician.png"},
-    {name: "TheHighPriestess", src: "./assets/UniformResolution/TheHighPriestess.png"},
-    {name: "TheHierophant", src: "./assets/UniformResolution/TheHierophant.png"},
-    {name: "TheHermit", src: "./assets/UniformResolution/TheHermit.png"},
-    {name: "TheEmpress", src: "./assets/UniformResolution/TheEmpress.png"},
-    {name: "TheFool", src: "./assets/UniformResolution/TheFool.png"},
-    {name: "TheEmperor", src: "./assets/UniformResolution/TheEmperor.png"},
-    {name: "TheDevil", src: "./assets/UniformResolution/TheDevil.png"},
-    {name: "Temperance", src: "./assets/UniformResolution/Temperance.png"},
-    {name: "TheChariot", src: "./assets/UniformResolution/TheChariot.png"},
-    {name: "TheLovers", src: "./assets/UniformResolution/TheLovers.png"},
-    {name: "TheHangedMan", src: "./assets/UniformResolution/TheHangedMan.png"},
+    {name: "Death", 
+    src0: "assets/UniformResolution/Death.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "Judgement", 
+    src0: "./assets/UniformResolution/Judgement.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "Justice", 
+    src0: "./assets/UniformResolution/Justice.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "Strength", 
+    src0: "./assets/UniformResolution/Strength.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "WheelOfFortune", 
+    src0: "./assets/UniformResolution/WheelOfFortune.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheWorld", 
+    src0: "./assets/UniformResolution/TheWorld.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheTower", 
+    src0: "./assets/UniformResolution/TheTower.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheSun", 
+    src0: "./assets/UniformResolution/TheSun.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheStar", 
+    src0: "./assets/UniformResolution/TheStar.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheMoon", 
+    src0: "./assets/UniformResolution/TheMoon.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheMagician", 
+    src0: "./assets/UniformResolution/TheMagician.png",
+    src1: "assets/UniformResolution/Death.png",
+    direc: 0},
+    {name: "TheHighPriestess", src0: "./assets/UniformResolution/TheHighPriestess.png"},
+    {name: "TheHierophant", src0: "./assets/UniformResolution/TheHierophant.png"},
+    {name: "TheHermit", src0: "./assets/UniformResolution/TheHermit.png"},
+    {name: "TheEmpress", src0: "./assets/UniformResolution/TheEmpress.png"},
+    {name: "TheFool", src0: "./assets/UniformResolution/TheFool.png"},
+    {name: "TheEmperor", src0: "./assets/UniformResolution/TheEmperor.png"},
+    {name: "TheDevil", src0: "./assets/UniformResolution/TheDevil.png"},
+    {name: "Temperance", src0: "./assets/UniformResolution/Temperance.png"},
+    {name: "TheChariot", src0: "./assets/UniformResolution/TheChariot.png"},
+    {name: "TheLovers", src0: "./assets/UniformResolution/TheLovers.png"},
+    {name: "TheHangedMan", src0: "./assets/UniformResolution/TheHangedMan.png"},
 ];
 
 window.onload = function() {
@@ -39,7 +72,12 @@ window.onload = function() {
       for (var i = 0; i < cards.length; i++) {
           var front = cards[i].querySelector(".back");
           front.dataset.name = cardsData[i].name;
-          front.src = cardsData[i].src;
+          let redomDirec = Math.floor(Math.random() * 2);
+          if (redomDirec == 0) front.src = cardsData[i].src0;
+          else {
+            front.src = cardsData[i].src1;
+            cardsData[i].direc = 1;
+          }
       }            
     });
 }

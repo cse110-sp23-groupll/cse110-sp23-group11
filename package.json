@@ -8,7 +8,8 @@
         "puppeteer": "^11.0.0"
     },
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "generate-docs": "jsdoc -c jsdocs/conf.json"
     },
     "jest": {
         "preset": "jest-puppeteer",

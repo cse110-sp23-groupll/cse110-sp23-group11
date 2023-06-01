@@ -9,4 +9,4 @@
 
 ## Decision Outcome
 * We chose to keep the interpreations of the three cards and generate an overall fortune as well. 
-* How to do this: assign each tarot card a value (ex. -3 for a really negative card or 0 for a neutral card) and sum the values of the three cards to get the connotation for the overall fortune.
+* How to do this: assign each tarot card a value (ex. -1 for a negative card or 0 for a neutral card) and sum the values of the three cards to get the connotation for the overall fortune.

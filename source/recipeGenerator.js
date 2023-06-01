@@ -28,13 +28,14 @@ function init(){
 
 
 /**
- *  @returns {Array<Object>}
+ *  @param {int} index
+ *  @returns {Array<Object>} recipe
 **/
 // returns random recipe from localstorage recipes data
-function getRecipeFromStorage() {
+function getRecipeFromStorage(index) {
     const localRecipes = JSON.parse(localStorage.getItem('recipes'));
-    const randomizedIdx = randomNumberGenerator();
-    const recipe = localRecipes[randomizedIdx]
+    //const randomizedIdx = randomNumberGenerator();
+    const recipe = localRecipes[index]
     return recipe
 }
 
@@ -47,9 +48,10 @@ function getRecipeFromStorage() {
 function GenerateButtonHandler(button, recipeContainer) {
     const main = document.querySelector(recipeContainer);
     const btn = document.querySelector(button);
+    const randomizedIdx = randomNumberGenerator();
     const recipeArticle = document.createElement('custom-recipe');
     btn.addEventListener('click', async () => {
-        const recipeData = await getRecipeFromStorage();
+        const recipeData = await getRecipeFromStorage(randomizedIdx);
         recipeArticle.data = recipeData;
         main.appendChild(recipeArticle);
     });

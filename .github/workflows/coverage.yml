@@ -1,7 +1,6 @@
 name: 'coverage'
 on:
     pull_request_target:
-    push_target:
 jobs:
     coverage:
         runs-on: ubuntu-latest

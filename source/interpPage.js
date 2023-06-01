@@ -3,26 +3,41 @@
 // Flip cards
 const cards = document.querySelectorAll(".card");
 
+/**
+ * Pulls JSON card strings from localStorage and parses them for use in updating card information
+ */
+function getCardsFromLS() {
+  let selectedCards = [localStorage.getItem("past"), localStorage.getItem("present"), localStorage.getItem("future")];
+  let cardObjs = [];
+  for (const card of selectedCards) {
+    cardObjs.push(JSON.parse(card));
+  }
+
+  return cardObjs;
+}
+
+/**
+ * Sets card information using past, present, and future information
+ */
 function setCardProp() {
-  let tempNum = [1, 2, 3];
-  const interp = '{"Name": "Card 1", "Content": "coolContent1", "Interp1": "dummy text1", "Interp2": "dummy text2",  "Interp3": "dummy text3"}\n{ "Name": "Card 2", "Content": "coolContent2", "Interp1": "dummy text4", "Interp2": "dummy text5", "Interp3": "dummy text6"}\n{"Name": "Card 3", "Content": "coolContent3", "Interp1": "dummy text7", "Interp2": "dummy text8", "Interp3": "dummy text9"}';
-  const jsonObjsSts = interp.split("\n");
+  let tempJson = '{"Description": "Description Name1","Interp1": "interp1","Interp2": "interp2","Interp3": "interp3"}\n{"Description": "Description Name2","Interp1": "interp4","Interp2": "interp5","Interp3": "interp6"}\n{"Description": "Description Name3", "Interp1": "interp7", "Interp2": "interp8", "Interp3": "interp9"}';
+  const jsonObjsSts = tempJson.split("\n");
   let jsonObjs = [];
+  let cardsSelected = getCardsFromLS();
 
   for (const obj of jsonObjsSts) {
     jsonObjs.push(JSON.parse(obj));
   }
 
+  let index = 0;
   for (const card of cards) {
-    let index = Math.floor(Math.random() * jsonObjs.length);
     let randomInterp = Math.floor(Math.random() * 3) + 1;
     let backCard = card.querySelector('.card-back')
-    card.querySelector('h3').innerText = jsonObjs[index]["Name"];
-    backCard.querySelector('h3').innerText = jsonObjs[index]["Name"];
-    backCard.querySelector('h4').innerText = jsonObjs[index]["Content"];
+    card.querySelector('h3').innerText = cardsSelected[index]["Name"];
+    backCard.querySelector('h3').innerText = cardsSelected[index]["Name"];
+    backCard.querySelector('h4').innerText = jsonObjs[index]["Description"];
     backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
-    tempNum.splice(index, 1);
-    jsonObjs.splice(index, 1);
+    index++;
   }
 }
 

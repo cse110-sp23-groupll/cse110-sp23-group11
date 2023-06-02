@@ -16,7 +16,7 @@
         "verbose": true,
         "collectCoverage": true,
         "collectCoverageFrom": [
-            "**/__tests__/**", "**/*.js"
+            "**/__tests__/**"
           ]
     }
 }

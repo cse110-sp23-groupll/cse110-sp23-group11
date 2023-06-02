@@ -1,4 +1,4 @@
-describe('Basic user flow for Website', () => {
+describe('Testing Welcome Page', () => {
     // First, visit the welcome page
     beforeAll(async () => {
       await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html');
@@ -13,9 +13,8 @@ describe('Basic user flow for Website', () => {
         await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
         const buttonClicked = await page.url();
+        console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
         expect(buttonClicked).toEqual(url);  
     
     }, 5000);
-
-    
 });

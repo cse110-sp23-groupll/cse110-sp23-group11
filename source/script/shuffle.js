@@ -89,7 +89,7 @@ var cardsData = [
     direc: 0},
 ];
 
-window.onload = function() {
+document.onload = function() {
     shuffle(cardsData);
     var cards = document.getElementsByClassName("card");
     for (var i = 0; i < cards.length; i++) {

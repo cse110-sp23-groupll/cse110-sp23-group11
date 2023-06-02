@@ -90,11 +90,20 @@ var cardsData = [
 ];
 
 window.onload = function() {
+    shuffle(cardsData);
     var cards = document.getElementsByClassName("card");
     for (var i = 0; i < cards.length; i++) {
-        cards[i].addEventListener("click", function() {
-            this.classList.toggle("flipped");
-        });
+      var front = cards[i].querySelector(".back");
+      front.dataset.name = cardsData[i].name;
+      let redomDirec = Math.floor(Math.random() * 2);
+      if (redomDirec == 0) front.src = cardsData[i].src0;
+      else {
+        front.src = cardsData[i].src1;
+        cardsData[i].direc = 1;
+      }
+      cards[i].addEventListener("click", function() {
+          this.classList.toggle("flipped");
+      });
     }
     var shuffleButton = document.getElementById("shuffleButton");
     shuffleButton.addEventListener("click", function() {
@@ -125,4 +134,8 @@ function shuffle(array) {
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
   }
+}
+
+function cardSelect(){
+    
 }

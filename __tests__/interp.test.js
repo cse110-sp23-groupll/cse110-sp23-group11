@@ -55,8 +55,9 @@ describe('Testing Interpretation Page', () => {
 
     // Check to make sure that clicking 'EXIT' takes the user to the start page
     it('Clicking \'EXIT\' goes to first page', async () => {
-      console.log('Clicking the button...'); 
       await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/interpretation.html');
+      console.log('THIS IS THE LINK BEFORE PRESSING EXIT: ', await page.url());
+      console.log('Clicking the button...'); 
       await page.evaluate(() => {
         document.querySelector('body > header > button > a').click(); 
       }); 

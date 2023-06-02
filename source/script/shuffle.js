@@ -89,7 +89,7 @@ var cardsData = [
     direc: 0},
 ];
 
-document.onload = function() {
+window.onload = function() {
     shuffle(cardsData);
     var cards = document.getElementsByClassName("card");
     for (var i = 0; i < cards.length; i++) {
@@ -106,12 +106,13 @@ document.onload = function() {
       });
     }
     var shuffleButton = document.getElementById("shuffleButton");
-    shuffleButton.addEventListener("click", function() {
-      for (var i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("flipped");
-      }
-      shuffle(cardsData);
-      for (var i = 0; i < cards.length; i++) {
+    if(shuffleButton){
+      shuffleButton.addEventListener("click", function() {
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].classList.remove("flipped");
+        }
+        shuffle(cardsData);
+        for (var i = 0; i < cards.length; i++) {
           var front = cards[i].querySelector(".back");
           front.dataset.name = cardsData[i].name;
           let redomDirec = Math.floor(Math.random() * 2);
@@ -120,8 +121,9 @@ document.onload = function() {
             front.src = cardsData[i].src1;
             cardsData[i].direc = 1;
           }
-      }            
-    });
+        }            
+      });
+    }
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;

@@ -1,0 +1,22 @@
+{
+    "devDependencies": {
+        "@babel/core": "^7.22.1",
+        "@babel/preset-env": "^7.22.4",
+        "babel-jest": "^27.5.1",
+        "jest": "^27.5.1",
+        "jest-puppeteer": "^6.2.0",
+        "puppeteer": "^11.0.0"
+    },
+    "scripts": {
+        "test": "jest",
+        "generate-docs": "jsdoc -c jsdocs/conf.json"
+    },
+    "jest": {
+        "preset": "jest-puppeteer",
+        "verbose": true,
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+             "**/*.js","!**/__tests__/**"
+          ]
+    }
+}

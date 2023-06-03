@@ -107,21 +107,23 @@ window.onload = function() {
       }
       cards[i].addEventListener("click", function() {
           this.classList.toggle("flipped");
-          if (cardDraw < 3){
+          if (cardDraw < 2) {
             //store drawCard Result in localStorage
             cardDraw++;
           }
-          else{
+          else {
             //when have 3 card. record result and jump to interptation page
             //store 3rd card in local storage
             //
             //pop up
-            var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
+            setTimeout(() => {
+              var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
               if (confirmPopup) {
                 window.location.href = 'interpretation.html';
               } else {
                 location.reload();
               }
+            }, 600);
           }
       });
     }

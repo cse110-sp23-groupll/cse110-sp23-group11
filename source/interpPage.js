@@ -32,8 +32,12 @@ function setCardProp() {
   let index = 0;
   for (const card of cards) {
     let randomInterp = Math.floor(Math.random() * 3) + 1;
-    let backCard = card.querySelector('.card-back')
+    let cardImg = card.querySelector('img');
+    const backCard = card.querySelector('.card-back')
+    
     card.querySelector('h3').innerText = cardsSelected[index]["Name"];
+    cardImg.src = cardsSelected[index]["src"];
+    cardImg.alt = cardsSelected[index]["alt"];
     backCard.querySelector('h3').innerText = cardsSelected[index]["Name"];
     backCard.querySelector('h4').innerText = jsonObjs[index]["Description"];
     backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];

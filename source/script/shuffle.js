@@ -1,3 +1,4 @@
+/** @type {card[]} */
 var cardsData = [
     {name: "Death", 
     src0: "assets/UniformResolution/Death.png",
@@ -89,6 +90,9 @@ var cardsData = [
     direc: 0},
 ];
 
+/** @type {int} */
+var cardDraw = 0;
+
 window.onload = function() {
     shuffle(cardsData);
     var cards = document.getElementsByClassName("card");
@@ -103,6 +107,22 @@ window.onload = function() {
       }
       cards[i].addEventListener("click", function() {
           this.classList.toggle("flipped");
+          if (cardDraw < 3){
+            //store drawCard Result in localStorage
+            cardDraw++;
+          }
+          else{
+            //when have 3 card. record result and jump to interptation page
+            //store 3rd card in local storage
+            //
+            //pop up
+            var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
+              if (confirmPopup) {
+                window.location.href = 'interpretation.html';
+              } else {
+                location.reload();
+              }
+          }
       });
     }
     var shuffleButton = document.getElementById("shuffleButton");
@@ -128,7 +148,7 @@ window.onload = function() {
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
-
+  cardDraw = 0;// when shuffle, reset number of card draw.
   while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;

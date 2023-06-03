@@ -1,4 +1,3 @@
-/** @type {card[]} */
 var cardsData = [
     {name: "Death", 
     src0: "assets/UniformResolution/Death.png",
@@ -90,9 +89,6 @@ var cardsData = [
     direc: 0},
 ];
 
-/** @type {int} */
-var cardDraw = 0;
-
 window.onload = function() {
     shuffle(cardsData);
     var cards = document.getElementsByClassName("card");
@@ -153,7 +149,7 @@ window.onload = function() {
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
-  cardDraw = 0;// when shuffle, reset number of card draw.
+
   while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;

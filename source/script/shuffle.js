@@ -106,24 +106,27 @@ window.onload = function() {
         cardsData[i].direc = 1;
       }
       cards[i].addEventListener("click", function() {
-          this.classList.toggle("flipped");
-          if (cardDraw < 2) {
-            //store drawCard Result in localStorage
-            cardDraw++;
-          }
-          else {
-            //when have 3 card. record result and jump to interptation page
-            //store 3rd card in local storage
-            //
-            //pop up
-            setTimeout(() => {
-              var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
-              if (confirmPopup) {
-                window.location.href = 'interpretation.html';
-              } else {
-                location.reload();
-              }
-            }, 600);
+          // once user clicks a card, it cannot be unflipped
+          if (!this.classList.contains("flipped")) {
+            this.classList.toggle("flipped");
+            if (cardDraw < 2) {
+              //store drawCard Result in localStorage
+              cardDraw++;
+            }
+            else {
+              //when have 3 card. record result and jump to interptation page
+              //store 3rd card in local storage
+              //
+              //pop up
+              setTimeout(() => {
+                var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
+                if (confirmPopup) {
+                  window.location.href = 'interpretation.html';
+                } else {
+                  location.reload();
+                }
+              }, 500);
+            } 
           }
       });
     }

@@ -13,6 +13,10 @@
     },
     "jest": {
         "preset": "jest-puppeteer",
-        "verbose": true
+        "verbose": true,
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+             "**/*.js","!**/__tests__/**"
+          ]
     }
 }

@@ -129,7 +129,7 @@ window.onload = function() {
             } else {
               location.reload();
             }
-          },20);
+          },500);
         }
       } else if (currentCard.classList.contains("flipped")) {
         currentCard.classList.remove("flipped");

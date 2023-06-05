@@ -8,7 +8,7 @@ global.HTMLElement = window.HTMLElement;
 
 require('../source/recipe');
 
-
+// check if our recipe.json file is uploaded in localstorage
 describe('Testing Recipe Generator', () => {
     let browser, page;
 
@@ -30,10 +30,11 @@ describe('Testing Recipe Generator', () => {
     const jsonRecipes = require('../source/recipes.json');
 
     expect(localRecipes.length).toBeGreaterThan(0); // Check if localRecipes array is not empty
-    expect(localRecipes).toEqual(expect.arrayContaining(jsonRecipes));
+    expect(localRecipes).toEqual(expect.arrayContaining(jsonRecipes)); // Check if localRecipes and jsonRecipes are same
     }, 5000);
 });
 
+// check custom-recipe component is exist and correct
 describe('Recipe Web Component Testing', () => {
     let el;
 

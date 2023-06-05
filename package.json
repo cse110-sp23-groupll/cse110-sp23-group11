@@ -16,7 +16,12 @@
         "verbose": true,
         "collectCoverage": true,
         "collectCoverageFrom": [
-             "**/*.js","!**/__tests__/**"
-          ]
+            "**/*.js",
+            "!**/__tests__/**"
+        ]
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "node-fetch": "^3.3.1"
     }
 }

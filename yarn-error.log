@@ -1,0 +1,64 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/19.4.0_1/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add --dev jest-localStorage-mock
+
+PATH: 
+  /opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/Caskroom/miniforge/base/bin:/opt/homebrew/Caskroom/miniforge/base/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.4.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/jest-localStorage-mock: Not found
+      at params.callback [as _callback] (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
+      at self.callback (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+      "devDependencies": {
+          "@babel/core": "^7.22.1",
+          "@babel/preset-env": "^7.22.4",
+          "babel-jest": "^27.5.1",
+          "jest": "^27.5.1",
+          "jest-puppeteer": "^6.2.0",
+          "puppeteer": "^11.0.0"
+      },
+      "scripts": {
+          "test": "jest",
+          "generate-docs": "jsdoc -c jsdocs/conf.json"
+      },
+      "jest": {
+          "preset": "jest-puppeteer",
+          "verbose": true,
+          "collectCoverage": true,
+          "collectCoverageFrom": [
+              "**/*.js",
+              "!**/__tests__/**"
+          ],
+          "resetMocks": false,
+          "setupFiles": ["jest-localStorage-mock"]
+      },
+      "dependencies": {
+          "axios": "^1.4.0",
+          "node-fetch": "^3.3.1"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

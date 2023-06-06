@@ -5,7 +5,7 @@
 ## Considered Options
 
 * limited imput using drop down menu and button
-* no input and give vague respounce
+* no input and give vague response (no input meaning nothing beyond simply selecting cards and viewing the result)
 * text box, allow any input.
 
 ## Decision Outcome

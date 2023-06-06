@@ -95,18 +95,18 @@ class Recipe extends HTMLElement {
     <p class="url">
       <a href=${data.url}>${data.url}</a>
     </p>
-    <p class="ingredients">
-      <strong>Ingredients</strong>
-      <ul>
-        ${data.Ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-      </ul>
-    </p>
-    <p class="method">
-      <strong>Method</strong>
-      <ol>
-        ${data.Method.map(step => `<li>${step}</li>`).join('')}
-      </ol>
-    </p>
+    <div class="ingredients">
+    <strong>Ingredients</strong>
+    <ul>
+      ${data.Ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+    </ul>
+  </div>
+  <div class="method">
+    <strong>Method</strong>
+    <ol>
+      ${data.Method.map(step => `<li>${step}</li>`).join('')}
+    </ol>
+  </div>
     `;
     }
   }

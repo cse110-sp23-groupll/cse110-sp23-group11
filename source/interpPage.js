@@ -34,8 +34,8 @@ async function setCardProp() {
     cardImg.src = cardData[0][name]["Source"]
     cardImg.alt = "Image for " + name;
     backCard.querySelector('h3').innerText = name;
-    backCard.querySelector('h4').innerText = "Description: " + cardData[0][name]["Description"];
-    backCard.querySelector('p').innerText = "Interpretation: " + cardData[0][name]["Interpretation"];
+    backCard.querySelector('h4').innerText = cardData[0][name]["Description"];
+    backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
   }
 
   // for (const card of cards) {

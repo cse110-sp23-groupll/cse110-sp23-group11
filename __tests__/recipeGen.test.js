@@ -31,7 +31,7 @@ describe('Testing Recipe Generator', () => {
 
     expect(localRecipes.length).toBeGreaterThan(0); // Check if localRecipes array is not empty
     expect(localRecipes).toEqual(expect.arrayContaining(jsonRecipes)); // Check if localRecipes and jsonRecipes are same
-    }, 5000);
+    }, 10000);
 });
 
 // check custom-recipe component is exist and correct

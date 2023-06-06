@@ -1,48 +1,56 @@
 // const { range } = require("express/lib/request");
-
+// import cardData from "source\\interpretations.json"
 // Flip cards
 const cards = document.querySelectorAll(".card");
 
 /**
  * Pulls JSON card strings from localStorage and parses them for use in updating card information
  */
-function getCardsFromLS() {
+function getCardNamesFromLS() {
   let selectedCards = [localStorage.getItem("past"), localStorage.getItem("present"), localStorage.getItem("future")];
-  let cardObjs = [];
+  let names = [];
+  
   for (const card of selectedCards) {
-    cardObjs.push(JSON.parse(card));
+    names.push((JSON.parse(card))["Name"]);
   }
 
-  return cardObjs;
+  return names;
 }
 
 /**
  * Sets card information using past, present, and future information
  */
-function setCardProp() {
-  let tempJson = '{"Description": "Description Name1","Interp1": "interp1","Interp2": "interp2","Interp3": "interp3"}\n{"Description": "Description Name2","Interp1": "interp4","Interp2": "interp5","Interp3": "interp6"}\n{"Description": "Description Name3", "Interp1": "interp7", "Interp2": "interp8", "Interp3": "interp9"}';
-  const jsonObjsSts = tempJson.split("\n");
-  let jsonObjs = [];
-  let cardsSelected = getCardsFromLS();
+async function setCardProp() {
+  let cardsSelected = getCardNamesFromLS();
+  let cardData = [];
+  await fetch("interpretations.json").then((response) => response.json()).then((json) => cardData = json);
 
-  for (const obj of jsonObjsSts) {
-    jsonObjs.push(JSON.parse(obj));
+  for (let i = 0; i < cards.length; i++) {
+    const name = cardsSelected[i];
+    console.log(name)
+    const cardImg = cards[i].querySelector('img');
+    const backCard = cards[i].querySelector('.card-back');
+    cards[i].querySelector('h3').innerText = name;
+    cardImg.src = cardData[0][name]["Source"]
+    cardImg.alt = "Image for " + name;
+    backCard.querySelector('h3').innerText = name;
+    backCard.querySelector('h4').innerText = "Description: " + cardData[0][name]["Description"];
+    backCard.querySelector('p').innerText = "Interpretation: " + cardData[0][name]["Interpretation"];
   }
 
-  let index = 0;
-  for (const card of cards) {
-    let randomInterp = Math.floor(Math.random() * 3) + 1;
-    let cardImg = card.querySelector('img');
-    const backCard = card.querySelector('.card-back')
+  // for (const card of cards) {
+  //   let randomInterp = Math.floor(Math.random() * 3) + 1;
+  //   let cardImg = card.querySelector('img');
+  //   const backCard = card.querySelector('.card-back')
     
-    card.querySelector('h3').innerText = cardsSelected[index]["Name"];
-    cardImg.src = cardsSelected[index]["src"];
-    cardImg.alt = cardsSelected[index]["alt"];
-    backCard.querySelector('h3').innerText = cardsSelected[index]["Name"];
-    backCard.querySelector('h4').innerText = jsonObjs[index]["Description"];
-    backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
-    index++;
-  }
+  //   card.querySelector('h3').innerText = cardsSelected[index]["Name"];
+  //   cardImg.src = cardsSelected[index]["src"];
+  //   cardImg.alt = cardsSelected[index]["alt"];
+  //   backCard.querySelector('h3').innerText = cardsSelected[index]["Name"];
+  //   backCard.querySelector('h4').innerText = jsonObjs[index]["Description"];
+  //   backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
+  //   index++;
+  // }
 }
 
 setCardProp();

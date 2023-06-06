@@ -1,176 +1,155 @@
 [{
-    "The Fool": {
-        "Description": "The first card of the Major Arcana, The Fool is generally a positive card indicating new beginnings.",
-        "Source": "source\\assets\\UniformResolution\\TheFool.png",
-        "Interpretation": "Your new adventure will bring you along a path which may require you to make a leap of faith but you will grow as a result of this new experience.",
-        "Value": 1
-      }
-}, 
-{
-    "The Magician": {
-        "Description": "When The Magician appears in a Tarot card reading it is a sign that you have all the skills and abilities you need to be successful.",
-        "Source": "source\\assets\\UniformResolution\\TheMagician.png",
-        "Interpretation": "This Major Arcana trump card shows you that you must use your intellect, concentration and willpower to make things happen.",
-        "Value": 1
-      }
-},
-{
-    "The High Priestess": {
-        "Description": "The High Priestess possesses intuition, mystery and sensuality combined with common sense.",
-        "Source": "source\\assets\\UniformResolution\\TheHighPriestess.png",
-        "Interpretation": "When the High Priestess appears in a tarot reading she indicates that now is the time to trust your instincts and go with your gut feeling.",
-        "Value": 0
-      }
-},
-{
-    "The Empress": {
-        "Description": "The Empress Tarot is the Major Arcana card of femininity and motherhood.",
-        "Source": "source\\assets\\UniformResolution\\TheEmpress.png",
-        "Interpretation": "People will be drawn to you, especially those in need of the empathy, compassion and nurturing you are able to provide.",
-        "Value": 0
-      }
-},
-{
-    "The Emperor": {
-        "Description": "The Emperor is a solid, stable man. He is a powerful, grounded protector but he also can be rigid and stubborn.",
-        "Source": "source\\assets\\UniformResolution\\TheEmperor.png",
-        "Interpretation": " The Emporer signifies that concentration, structure, stability and focus is required if you want to make your ideas and dreams a reality.",
-        "Value": 0
-      }
-},
-{
-    "The Hierophant": {
-        "Description": "The Hierophant can represent a counsellor or mentor who will provide you with wisdom and guidance or a spiritual or religious advisor.",
-        "Source": "source\\assets\\UniformResolution\\TheHierophant.png",
-        "Interpretation": "It’s not a time to rock the boat.",
-        "Value": 0
-      }
-},
-{
-    "The Lovers": {
-        "Description": "The Lovers signifies perfect union, harmony, love and attraction.",
-        "Source": "source\\assets\\UniformResolution\\TheLovers.png",
-        "Interpretation": "Don’t automatically go for the easy road, make sure you have all the information and make the right decision. Even if it seems like a difficult path, it will lead you on to greater things.",
-        "Value": 1
-      }
-},
-{
-    "The Chariot": {
-        "Description": "The Chariot Tarot represents overcoming obstacles through determination, focus and willpower.",
-        "Source": "source\\assets\\UniformResolution\\TheChariot.png",
-        "Interpretation": "Put any worries aside and maintain your focus.",
-        "Value": 1
-      }
-},
-{
-    "Strength": {
-        "Description": "The Strength Tarot card represents mastering raw emotions in order to bring calm to yourself or a situation.",
-        "Source": "source\\assets\\UniformResolution\\Strength.png",
-        "Interpretation": "You have all the skills you need to be successful, the focus now is to conquer your inner worries and believe in yourself.",
-        "Value": 1
-      }
-},
-{
-    "The Hermit": {
-        "Description": "The Hermit Tarot card in an upright position generally indicates that you are entering a period of soul searching, self-reflection and spiritual enlightenment.",
-        "Source": "source\\assets\\UniformResolution\\TheHermit.png",
-        "Interpretation": "This is a time to focus on yourself and meeting your own needs.",
-        "Value": 1
-      }
-},
-{
-    "Wheel of Fortune": {
-        "Description": "The Wheel of Fortune is generally an indicator of luck or destiny and it is a Major Arcana signifier of change.",
-        "Source": "source\\assets\\UniformResolution\\WheelOfFortune.png",
-        "Interpretation": "Make sure you make the most of this time by focusing your intention on what you truly want! Know that the universe has a plan for you even if that plan is not clear to you at this point.",
-        "Value": 1
-      }
-},
-{
-    "Justice": {
-        "Description": "Justice is showing you that all actions have consequences.",
-        "Source": "source\\assets\\UniformResolution\\Justice.png",
-        "Interpretation": "You must try to keep yourself on an even-keel as events unfold.",
-        "Value": 0
-      }
-},
-{
-    "The Hanged Man": {
-        "Description": "The Hanged Man Tarot card indicates that you are in a situation that you are not happy with.",
-        "Source": "source\\assets\\UniformResolution\\TheHangedMan.png",
-        "Interpretation": "Give yourself time to just relax, stop trying to control things and just let them be, the correct course of action will become clear to you in time.",
-        "Value": -1
-      }
-},
-{
-    "Death": {
-        "Description": "The Death Tarot Card usually signifies spiritual transformation and a time of change and new beginnings, not actual death!",
-        "Source": "source\\assets\\UniformResolution\\Death.png",
-        "Interpretation": "Draw a line under the past in order to move forward in a positive direction.",
-        "Value": -1
-      }
-},
-{
-    "Temperance": {
-        "Description": "The Temperance Tarot card signifies balance, peace, patience and moderation.",
-        "Source": "source\\assets\\UniformResolution\\Temperance.png",
-        "Interpretation": "Temperance indicates that you are truly in touch with who you are inside, what you value and your own moral compass and you are finding it easier to figure out your aspirations and set yourself goals.",
-        "Value": 1
-      }
-},
-{
-    "The Devil": {
-        "Description": "The Devil Tarot card can signify depression or addiction. It can also be a sign of feeling trapped or restricted.",
-        "Source": "source\\assets\\UniformResolution\\TheDevil.png",
-        "Interpretation": "You are in control of your own destiny and are not bound by anything other than your own attitudes and behaviour. Don’t give up and don’t give away your power.",
-        "Value": -1
-      }
-},
-{
-    "The Tower": {
-        "Description": "The Tower Tarot card represents chaos and destruction. It is the Major Arcana card of sudden upheaval and unexpected change.",
-        "Source": "source\\assets\\UniformResolution\\TheTower.png",
-        "Interpretation": "The Tower may be a warning to be mindful of your safety.",
-        "Value": -1
-      }
-},
-{
-    "The Star": {
-        "Description": "The Star indicates hope for the future, inspiration and contentment.",
-        "Source": "source\\assets\\UniformResolution\\TheStar.png",
-        "Interpretation": "Trust that the universe has a plan for you and trust the feeling you have that everything is going to be OK.",
-        "Value": 1
-      }
-},
-{
-    "The Moon": {
-        "Description": "The Moon tells you that something about a situation or person in your life is not what it appears to be and you need to trust what your instincts are telling you in order to see past this illusion.",
-        "Source": "source\\assets\\UniformResolution\\TheMoon.png",
-        "Interpretation": "You should pay attention to your dreams as your subconscious may be bringing your attention to some information you’ve missed.",
-        "Value": -1
-      }
-},
-{
-    "The Sun": {
-        "Description": "The Sun Tarot card is the Major Arcana card of positivity, optimism, freedom and fun.",
-        "Source": "source\\assets\\UniformResolution\\TheSun.png",
-        "Interpretation": "You will find that people are drawn to the happy vibes and positive energy you are giving out and you will bring light and joy to everyone and everything you come into contact with.",
-        "Value": 1
-      }
-},
-{
-    "Judgement": {
-        "Description": "The Judgement Tarot card can indicate that you and/or someone you care about are being judged too harshly by others.",
-        "Source": "source\\assets\\UniformResolution\\Judgement.png",
-        "Interpretation": "You have come through your past karmic lessons with increased self-awareness and you are allowing healing to take place so you can move forward in a positive direction.",
-        "Value": -1
-      }
-},
-{
-    "The World": {
-        "Description": "The World Tarot card signifies having the world at your feet!",
-        "Source": "source\\assets\\UniformResolution\\TheWorld.png",
-        "Interpretation": "The universe is smiling upon you and luck is on your side.",
-        "Value": 1
-      }
+  "The Fool": {
+    "Description": "The first card of the Major Arcana, The Fool is generally a positive card indicating new beginnings.",
+    "Source": "source\\assets\\UniformResolution\\TheFool.png",
+    "Interpretation": "Your new adventure will bring you along a path which may require you to make a leap of faith but you will grow as a result of this new experience.",
+    "Value": 1
+  },
+
+  "The Magician": {
+    "Description": "When The Magician appears in a Tarot card reading it is a sign that you have all the skills and abilities you need to be successful.",
+    "Source": "source\\assets\\UniformResolution\\TheMagician.png",
+    "Interpretation": "This Major Arcana trump card shows you that you must use your intellect, concentration and willpower to make things happen.",
+    "Value": 1
+  },
+
+  "The High Priestess": {
+    "Description": "The High Priestess possesses intuition, mystery and sensuality combined with common sense.",
+    "Source": "source\\assets\\UniformResolution\\TheHighPriestess.png",
+    "Interpretation": "When the High Priestess appears in a tarot reading she indicates that now is the time to trust your instincts and go with your gut feeling.",
+    "Value": 0
+  },
+
+  "The Empress": {
+    "Description": "The Empress Tarot is the Major Arcana card of femininity and motherhood.",
+    "Source": "source\\assets\\UniformResolution\\TheEmpress.png",
+    "Interpretation": "People will be drawn to you, especially those in need of the empathy, compassion and nurturing you are able to provide.",
+    "Value": 0
+  },
+
+  "The Emperor": {
+      "Description": "The Emperor is a solid, stable man. He is a powerful, grounded protector but he also can be rigid and stubborn.",
+      "Source": "source\\assets\\UniformResolution\\TheEmperor.png",
+      "Interpretation": " The Emperor signifies that concentration, structure, stability and focus is required if you want to make your ideas and dreams a reality.",
+      "Value": 0
+  },
+
+  "The Hierophant": {
+      "Description": "The Hierophant can represent a counsellor or mentor who will provide you with wisdom and guidance or a spiritual or religious advisor.",
+      "Source": "source\\assets\\UniformResolution\\TheHierophant.png",
+      "Interpretation": "It’s not a time to rock the boat.",
+      "Value": 0
+  },
+
+  "The Lovers": {
+    "Description": "The Lovers signifies perfect union, harmony, love and attraction.",
+    "Source": "source\\assets\\UniformResolution\\TheLovers.png",
+    "Interpretation": "Don’t automatically go for the easy road, make sure you have all the information and make the right decision. Even if it seems like a difficult path, it will lead you on to greater things.",
+    "Value": 1
+  },
+  
+  "The Chariot": {
+    "Description": "The Chariot Tarot represents overcoming obstacles through determination, focus and willpower.",
+    "Source": "source\\assets\\UniformResolution\\TheChariot.png",
+    "Interpretation": "Put any worries aside and maintain your focus.",
+    "Value": 1
+  },
+
+  "Strength": {
+      "Description": "The Strength Tarot card represents mastering raw emotions in order to bring calm to yourself or a situation.",
+      "Source": "source\\assets\\UniformResolution\\Strength.png",
+      "Interpretation": "You have all the skills you need to be successful, the focus now is to conquer your inner worries and believe in yourself.",
+      "Value": 1
+  },
+
+  "The Hermit": {
+    "Description": "The Hermit Tarot card in an upright position generally indicates that you are entering a period of soul searching, self-reflection and spiritual enlightenment.",
+    "Source": "source\\assets\\UniformResolution\\TheHermit.png",
+    "Interpretation": "This is a time to focus on yourself and meeting your own needs.",
+    "Value": 1
+  },
+
+  "Wheel of Fortune": {
+    "Description": "The Wheel of Fortune is generally an indicator of luck or destiny and it is a Major Arcana signifier of change.",
+    "Source": "source\\assets\\UniformResolution\\WheelOfFortune.png",
+    "Interpretation": "Make sure you make the most of this time by focusing your intention on what you truly want! Know that the universe has a plan for you even if that plan is not clear to you at this point.",
+    "Value": 1
+  },
+
+  "Justice": {
+    "Description": "Justice is showing you that all actions have consequences.",
+    "Source": "source\\assets\\UniformResolution\\Justice.png",
+    "Interpretation": "You must try to keep yourself on an even-keel as events unfold.",
+    "Value": 0
+  },
+
+  "The Hanged Man": {
+    "Description": "The Hanged Man Tarot card indicates that you are in a situation that you are not happy with.",
+    "Source": "source\\assets\\UniformResolution\\TheHangedMan.png",
+    "Interpretation": "Give yourself time to just relax, stop trying to control things and just let them be, the correct course of action will become clear to you in time.",
+    "Value": -1
+  },
+
+  "Death": {
+    "Description": "The Death Tarot Card usually signifies spiritual transformation and a time of change and new beginnings, not actual death!",
+    "Source": "source\\assets\\UniformResolution\\Death.png",
+    "Interpretation": "Draw a line under the past in order to move forward in a positive direction.",
+    "Value": -1
+  },
+
+  "Temperance": {
+    "Description": "The Temperance Tarot card signifies balance, peace, patience and moderation.",
+    "Source": "source\\assets\\UniformResolution\\Temperance.png",
+    "Interpretation": "Temperance indicates that you are truly in touch with who you are inside, what you value and your own moral compass and you are finding it easier to figure out your aspirations and set yourself goals.",
+    "Value": 1
+  },
+
+  "The Devil": {
+    "Description": "The Devil Tarot card can signify depression or addiction. It can also be a sign of feeling trapped or restricted.",
+    "Source": "source\\assets\\UniformResolution\\TheDevil.png",
+    "Interpretation": "You are in control of your own destiny and are not bound by anything other than your own attitudes and behaviour. Don’t give up and don’t give away your power.",
+    "Value": -1
+  },
+
+  "The Tower": {
+    "Description": "The Tower Tarot card represents chaos and destruction. It is the Major Arcana card of sudden upheaval and unexpected change.",
+    "Source": "source\\assets\\UniformResolution\\TheTower.png",
+    "Interpretation": "The Tower may be a warning to be mindful of your safety.",
+    "Value": -1
+  },
+
+  "The Star": {
+    "Description": "The Star indicates hope for the future, inspiration and contentment.",
+    "Source": "source\\assets\\UniformResolution\\TheStar.png",
+    "Interpretation": "Trust that the universe has a plan for you and trust the feeling you have that everything is going to be OK.",
+    "Value": 1
+  },
+
+  "The Moon": {
+    "Description": "The Moon tells you that something about a situation or person in your life is not what it appears to be and you need to trust what your instincts are telling you in order to see past this illusion.",
+    "Source": "source\\assets\\UniformResolution\\TheMoon.png",
+    "Interpretation": "You should pay attention to your dreams as your subconscious may be bringing your attention to some information you’ve missed.",
+    "Value": -1
+  },
+
+  "The Sun": {
+    "Description": "The Sun Tarot card is the Major Arcana card of positivity, optimism, freedom and fun.",
+    "Source": "source\\assets\\UniformResolution\\TheSun.png",
+    "Interpretation": "You will find that people are drawn to the happy vibes and positive energy you are giving out and you will bring light and joy to everyone and everything you come into contact with.",
+    "Value": 1
+  },
+
+  "Judgement": {
+    "Description": "The Judgement Tarot card can indicate that you and/or someone you care about are being judged too harshly by others.",
+    "Source": "source\\assets\\UniformResolution\\Judgement.png",
+    "Interpretation": "You have come through your past karmic lessons with increased self-awareness and you are allowing healing to take place so you can move forward in a positive direction.",
+    "Value": -1
+  },
+
+  "The World": {
+    "Description": "The World Tarot card signifies having the world at your feet!",
+    "Source": "source\\assets\\UniformResolution\\TheWorld.png",
+    "Interpretation": "The universe is smiling upon you and luck is on your side.",
+    "Value": 1
+  }
 }]

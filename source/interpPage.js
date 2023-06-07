@@ -1,7 +1,6 @@
-// const { range } = require("express/lib/request");
-// import cardData from "source\\interpretations.json"
 // Flip cards
-import cardData from "./interpretations.json" assert { type: 'json' }
+import cardData from "./cards.json" assert { type: 'json' }
+import interpData from "./interpretations.json" assert { type: 'json'}
 
 const cards = document.querySelectorAll(".card");
 
@@ -24,6 +23,7 @@ function getCardNamesFromLS() {
  */
 function setCardProp() {
   let cardsSelected = getCardNamesFromLS();
+  let finalInterp = document.querySelector('h2');
 
   for (let i = 0; i < cards.length; i++) {
     const name = cardsSelected[i];
@@ -37,19 +37,24 @@ function setCardProp() {
     backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
   }
 
-  // for (const card of cards) {
-  //   let randomInterp = Math.floor(Math.random() * 3) + 1;
-  //   let cardImg = card.querySelector('img');
-  //   const backCard = card.querySelector('.card-back')
-    
-  //   card.querySelector('h3').innerText = cardsSelected[index]["Name"];
-  //   cardImg.src = cardsSelected[index]["src"];
-  //   cardImg.alt = cardsSelected[index]["alt"];
-  //   backCard.querySelector('h3').innerText = cardsSelected[index]["Name"];
-  //   backCard.querySelector('h4').innerText = jsonObjs[index]["Description"];
-  //   backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
-  //   index++;
-  // }
+  finalInterp.innerText = randomInterp(cardsSelected);
+  
+}
+
+/**
+ * Returns a random interpretation given the values of the cards which determine how positive/negative a fortune will be
+ * @param {*} cardNames A list of the names of the cards chosen by the user
+ * @returns A random interpretation given the sum of the values
+ */
+
+function randomInterp(cardNames) {
+  let total = 0;
+  for (const name of cardNames) {
+    total += cardData[0][name]["Value"];
+  }
+  console.log(interpData);
+  let randomChoice = Math.floor(Math.random() * 5) + 1;
+  return interpData[0][total.toString()]["Interpretation" + randomChoice];
 }
 
 setCardProp();

@@ -17,4 +17,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+      - run: npm install --save-dev jest babel-jest @babel/core @babel/preset-env puppeteer jest-puppeteer
+      - run: npm run build --if-present
       - run: npm run generate-docs

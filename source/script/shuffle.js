@@ -90,23 +90,26 @@ var cardsData = [
     direc: 0},
 ];
 
+//initialize an array to store selected card
+var selectedCards = [];
+var drawCardResult = [];
 
 window.onload = function() {
   shuffle(cardsData);
   //initialize card data
   var cards = document.getElementsByClassName("card");
-  //initialize an array to store selected card
-  var selectedCards = [];
 
   for (var i = 0; i < cards.length; i++) {
     var front = cards[i].querySelector(".back");
+    var cardId = cardsData[i].name;//get what card it is
+
     front.dataset.name = cardsData[i].name;
     let randomDirec = Math.floor(Math.random() * 2);
 
     if (randomDirec === 0) {
-      front.src = cardsData[i].src0;
+      front.src = cardsData[i].src0;// if this number is 0, card is not reversed
     } else {
-      front.src = cardsData[i].src1;
+      front.src = cardsData[i].src1;//otherwith Card is reversed
       cardsData[i].direc = 1;
     }
 
@@ -117,26 +120,38 @@ window.onload = function() {
         currentCard.classList.add("flipped");
         selectedCards.push(currentCard);
 
+        // Store drawCard result in localStorage
+        var cardData = {
+          card: cardId,
+          reversed: randomDirec
+        };
+        drawCardResult.push(cardData);
+
         if (selectedCards.length === 3) {
           setTimeout(function() {
-          // Store drawCard result in localStorage
-          // Store the 3rd card in localStorage
-          // Show pop-up
+
+
+            // Show pop-up
             //add a time out so the flip get excuted before pop up
             var confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
             if (confirmPopup) {
+              var drawCardResultJSON = JSON.stringify(drawCardResult);
+              // Store drawCardResultJSON in localStorage
+              localStorage.setItem("drawCardResult", drawCardResultJSON);
               window.location.href = 'interpretation.html';
             } else {
               location.reload();
             }
           },500);
         }
-      } else if (currentCard.classList.contains("flipped")) {
-        currentCard.classList.remove("flipped");
-        selectedCards = selectedCards.filter(function(card) {
-          return card !== currentCard;
-        });
-      }
+      } 
+      // if allow deselect card
+      // else if (currentCard.classList.contains("flipped")) {
+      //   currentCard.classList.remove("flipped");
+      //   selectedCards = selectedCards.filter(function(card) {
+      //     return card !== currentCard;
+      //   });
+      // }
     });
   }
   //the button would shuffle the card deck
@@ -160,9 +175,12 @@ window.onload = function() {
     });
   }
 }
+
+// shuffle card function
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
   cardDraw = 0;// when shuffle, reset number of card draw.
+  selectedCards = [];
   while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
@@ -172,6 +190,3 @@ function shuffle(array) {
       array[randomIndex] = temporaryValue;
   }
 }
-// function cardSelect(){
-    
-// }

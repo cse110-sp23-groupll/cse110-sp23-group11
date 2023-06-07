@@ -18,3 +18,6 @@ There will be no support after this project ends.
 
 ## Application Dependencies:
 Fonts from https://fonts.googleapis.com/css2?family=Chango&display=swap
+
+## Documentation
+[JSDocs](https://github.com/cse110-sp23-groupll/cse110-sp23-group11/out/index.html)

@@ -1,18 +1,57 @@
 [{
-    "Name": "Card 1",
-    "Interp1": "dummy text1",
-    "Interp2": "dummy text2",
-    "Interp3": "dummy text3"
-}, 
-{
-    "Name": "Card 2",
-    "Interp1": "dummy text4",
-    "Interp2": "dummy text5",
-    "Interp3": "dummy text6"
-},
-{
-    "Name": "Card 3",
-    "Interp1": "dummy text7",
-    "Interp2": "dummy text8",
-    "Interp3": "dummy text9"
+    "3" : {
+        "Interpretation1" : "Yay you're EXTREMELY happy 1",
+        "Interpretation2" : "Yay you're EXTREMELY happy 2",
+        "Interpretation3" : "Yay you're EXTREMELY happy 3",
+        "Interpretation4" : "Yay you're EXTREMELY happy 4",
+        "Interpretation5" : "Yay you're EXTREMELY happy 5"
+    },
+
+    "2": {
+        "Interpretation1" : "Yay you're pretty happy 1",
+        "Interpretation2" : "Yay you're pretty happy 2",
+        "Interpretation3" : "Yay you're pretty happy 3",
+        "Interpretation4" : "Yay you're pretty happy 4",
+        "Interpretation5" : "Yay you're pretty happy 5"
+    },
+
+    "1": {
+        "Interpretation1" : "Yay you're happy 1",
+        "Interpretation2" : "Yay you're happy 2",
+        "Interpretation3" : "Yay you're happy 3",
+        "Interpretation4" : "Yay you're happy 4",
+        "Interpretation5" : "Yay you're happy 5"      
+    },
+
+    "0": {
+        "Interpretation1" : "You're fine, ig 1",
+        "Interpretation2" : "You're fine, ig 2",
+        "Interpretation3" : "You're fine, ig 3",
+        "Interpretation4" : "You're fine, ig 4",
+        "Interpretation5" : "You're fine, ig 5"              
+    },
+
+    "-1": {
+        "Interpretation1" : "You're unfortunate, ig 1",
+        "Interpretation2" : "You're unfortunate, ig 2",
+        "Interpretation3" : "You're unfortunate, ig 3",
+        "Interpretation4" : "You're unfortunate, ig 4",
+        "Interpretation5" : "You're unfortunate, ig 5"   
+    },
+
+    "-2": {
+        "Interpretation1" : "You're very sad, ig 1",
+        "Interpretation2" : "You're very sad, ig 2",
+        "Interpretation3" : "You're very sad, ig 3",
+        "Interpretation4" : "You're very sad, ig 4",
+        "Interpretation5" : "You're very sad, ig 5"         
+    },
+
+    "-3": {
+        "Interpretation1" : "DOOMED! :( 1",
+        "Interpretation2" : "DOOMED! :( 1",
+        "Interpretation3" : "DOOMED! :( 1",
+        "Interpretation4" : "DOOMED! :( 1",
+        "Interpretation5" : "DOOMED! :( 1"   
+    }
 }]

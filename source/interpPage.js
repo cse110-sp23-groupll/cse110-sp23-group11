@@ -1,37 +1,83 @@
-// const { range } = require("express/lib/request");
-
 // Flip cards
+import cardData from "./cards.json" assert { type: 'json' }
+import interpData from "./interpretations.json" assert { type: 'json'}
+
 const cards = document.querySelectorAll(".card");
 
-function setCardProp() {
-  let tempNum = [1, 2, 3];
-  const interp = '{"Name": "Card 1", "Content": "coolContent1", "Interp1": "dummy text1", "Interp2": "dummy text2",  "Interp3": "dummy text3"}\n{ "Name": "Card 2", "Content": "coolContent2", "Interp1": "dummy text4", "Interp2": "dummy text5", "Interp3": "dummy text6"}\n{"Name": "Card 3", "Content": "coolContent3", "Interp1": "dummy text7", "Interp2": "dummy text8", "Interp3": "dummy text9"}';
-  const jsonObjsSts = interp.split("\n");
-  let jsonObjs = [];
+setCardProp();
 
-  for (const obj of jsonObjsSts) {
-    jsonObjs.push(JSON.parse(obj));
+
+/**
+ * Pulls JSON card strings from localStorage and parses them for use in updating card information
+ */
+function getCardNamesFromLS() {
+  let selectedCards = [localStorage.getItem("past"), localStorage.getItem("present"), localStorage.getItem("future")];
+  let names = [];
+  
+  for (const card of selectedCards) {
+    names.push((JSON.parse(card))["Name"]);
   }
 
-  for (const card of cards) {
-    let index = Math.floor(Math.random() * jsonObjs.length);
-    let randomInterp = Math.floor(Math.random() * 3) + 1;
-    let backCard = card.querySelector('.card-back')
-    card.querySelector('h3').innerText = jsonObjs[index]["Name"];
-    backCard.querySelector('h3').innerText = jsonObjs[index]["Name"];
-    backCard.querySelector('h4').innerText = jsonObjs[index]["Content"];
-    backCard.querySelector('p').innerText = "Interpretation: " + jsonObjs[index]["Interp" + randomInterp];
-    tempNum.splice(index, 1);
-    jsonObjs.splice(index, 1);
-  }
+  return names;
 }
 
-setCardProp();
+/**
+ * Sets card information using past, present, and future information
+ */
+function setCardProp() {
+  let cardsSelected = getCardNamesFromLS();
+  let finalInterp = document.querySelector('h2');
+
+  for (let i = 0; i < cards.length; i++) {
+    const name = cardsSelected[i];
+    const cardImg = cards[i].querySelector('img');
+    const backCard = cards[i].querySelector('.card-back');
+    cards[i].querySelector('h3').innerText = name;
+    cardImg.src = cardData[0][name]["Source"]
+    cardImg.alt = "Image for " + name;
+    backCard.querySelector('h3').innerText = name;
+    backCard.querySelector('h4').innerText = cardData[0][name]["Description"];
+    backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
+  }
+
+  finalInterp.innerText = randomInterp(cardsSelected);
+  
+}
+
+/**
+ * Returns a random interpretation given the values of the cards which determine how positive/negative a fortune will be
+ * @param {*} cardNames A list of the names of the cards chosen by the user
+ * @returns A random interpretation given the sum of the values
+ */
+
+function randomInterp(cardNames) {
+  let total = 0;
+  for (const name of cardNames) {
+    total += cardData[0][name]["Value"];
+  }
+
+  let randomChoice = Math.floor(Math.random() * 5) + 1;
+  return interpData[0][total.toString()]["Interpretation" + randomChoice];
+}
 
 function flipCard() {
   this.classList.toggle("is-flipped");
 }
 cards.forEach(card => card.addEventListener("click", flipCard));
+
+// Exit page button redirects to the welcome page
+const exitButton = (document.getElementsByClassName("exit"))[0];
+exitButton.addEventListener('click', () => {
+  location.href = "welcome.html";
+  localStorage.clear();
+})
+
+// New reading button redirects to the card selection page
+const newReadingButton = (document.getElementsByClassName("newReading"))[0];
+newReadingButton.addEventListener('click', () => {
+  location.href = "card-page.html";
+  localStorage.clear();
+})
 
 // Expand the page for recipe content
 const expandButton = document.getElementById('expand-btn');

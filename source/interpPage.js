@@ -4,6 +4,9 @@ import interpData from "./interpretations.json" assert { type: 'json'}
 
 const cards = document.querySelectorAll(".card");
 
+setCardProp();
+
+
 /**
  * Pulls JSON card strings from localStorage and parses them for use in updating card information
  */
@@ -52,17 +55,29 @@ function randomInterp(cardNames) {
   for (const name of cardNames) {
     total += cardData[0][name]["Value"];
   }
-  console.log(interpData);
+
   let randomChoice = Math.floor(Math.random() * 5) + 1;
   return interpData[0][total.toString()]["Interpretation" + randomChoice];
 }
-
-setCardProp();
 
 function flipCard() {
   this.classList.toggle("is-flipped");
 }
 cards.forEach(card => card.addEventListener("click", flipCard));
+
+// Exit page button redirects to the welcome page
+const exitButton = (document.getElementsByClassName("exit"))[0];
+exitButton.addEventListener('click', () => {
+  location.href = "welcome.html";
+  localStorage.clear();
+})
+
+// New reading button redirects to the card selection page
+const newReadingButton = (document.getElementsByClassName("newReading"))[0];
+newReadingButton.addEventListener('click', () => {
+  location.href = "card-page.html";
+  localStorage.clear();
+})
 
 // Expand the page for recipe content
 const expandButton = document.getElementById('expand-btn');

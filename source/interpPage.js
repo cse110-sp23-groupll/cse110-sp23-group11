@@ -1,6 +1,8 @@
 // const { range } = require("express/lib/request");
 // import cardData from "source\\interpretations.json"
 // Flip cards
+import cardData from "./interpretations.json" assert { type: 'json' }
+
 const cards = document.querySelectorAll(".card");
 
 /**
@@ -20,14 +22,11 @@ function getCardNamesFromLS() {
 /**
  * Sets card information using past, present, and future information
  */
-async function setCardProp() {
+function setCardProp() {
   let cardsSelected = getCardNamesFromLS();
-  let cardData = [];
-  await fetch("interpretations.json").then((response) => response.json()).then((json) => cardData = json);
 
   for (let i = 0; i < cards.length; i++) {
     const name = cardsSelected[i];
-    console.log(name)
     const cardImg = cards[i].querySelector('img');
     const backCard = cards[i].querySelector('.card-back');
     cards[i].querySelector('h3').innerText = name;

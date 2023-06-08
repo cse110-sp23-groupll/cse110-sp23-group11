@@ -1,7 +1,7 @@
 {
     "source": {
         "includePattern": ".+\\.js(doc|x)?$",
-        "include": ["."],
+        "include": ["source"],
         "exclude": ["source/eslint.config.js", "node_modules"]
     },
     "recurseDepth": 3,

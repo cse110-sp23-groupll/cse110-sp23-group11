@@ -6,7 +6,7 @@
     },
     "recurseDepth": 3,
     "opts": {
-        "destination": "out/",
+        "destination": "./out/",
         "recurse": true
     }
 }

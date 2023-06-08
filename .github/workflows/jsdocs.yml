@@ -21,7 +21,6 @@ jobs:
       - run: npm version
       - name: GIT create new branch
         env:
-          CI_COMMIT_MESSAGE: Documentation Update
           CI_COMMIT_AUTHOR: Sophia Yu
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
@@ -32,6 +31,8 @@ jobs:
           npm run build --if-present
           npm run generate-docs
       - name: GIT commit and push documentation changes
+        env:          
+          CI_COMMIT_AUTHOR: Sophia Yu
         run: |
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"

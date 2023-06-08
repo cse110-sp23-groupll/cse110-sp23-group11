@@ -19,6 +19,10 @@ jobs:
           node-version: '18.x'
       - run: npm install --save-dev jsdoc
       - run: npm version
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "Syu125@users.noreply.github.com"
+          git checkout updateDocumentation
       - run: npm run build --if-present
       - run: npm run generate-docs
       - name: GIT commit and push documentation changes
@@ -26,10 +30,8 @@ jobs:
           CI_COMMIT_MESSAGE: Documentation Update
           CI_COMMIT_AUTHOR: Sophia Yu
         run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "Syu125@users.noreply.github.com"
-          git pull
+          git pull origin main
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push -u origin main
+          git push
         

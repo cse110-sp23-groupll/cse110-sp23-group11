@@ -1,6 +1,6 @@
 {
     "source": {
-        "includePattern": ".+\\.js(doc|x)?$",
+        "includePattern": ".js",
         "include": ["source"],
         "exclude": ["source/eslint.config.js", "node_modules"]
     },

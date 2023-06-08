@@ -2,7 +2,7 @@
     "source": {
         "includePattern": ".+\\.js(doc|x)?$",
         "include": ["."],
-        "exclude": ["source/eslint.config.js"]
+        "exclude": ["source/eslint.config.js", "node_modules"]
     },
     "recurseDepth": 3,
     "opts": {

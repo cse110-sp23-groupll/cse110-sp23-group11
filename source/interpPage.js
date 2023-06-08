@@ -32,7 +32,7 @@ function setCardProp() {
     const name = cardsSelected[i];
     const cardImg = cards[i].querySelector('img');
     const backCard = cards[i].querySelector('.card-back');
-    // cards[i].querySelector('h3').innerText = name;
+    cards[i].querySelector('h3').innerText = name;
     cardImg.src = cardData[0][name]["Source"]
     cardImg.alt = "Image for " + name;
     backCard.querySelector('h3').innerText = name;

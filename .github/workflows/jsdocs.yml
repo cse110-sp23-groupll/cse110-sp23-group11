@@ -31,8 +31,8 @@ jobs:
           npm run build --if-present
           npm run generate-docs
       - name: GIT commit and push documentation changes
-        env:          
-          CI_COMMIT_AUTHOR: Sophia Yu
+        env:
+          CI_COMMIT_MESSAGE: Documentation Update
         run: |
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"

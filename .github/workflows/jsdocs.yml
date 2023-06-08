@@ -27,10 +27,10 @@ jobs:
       - name: GIT commit and push documentation changes
         env:
           CI_COMMIT_MESSAGE: Documentation Update
-          CI_COMMIT_AUTHOR: Syu125
+          CI_COMMIT_AUTHOR: Sophia Yu
         run: git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         run: git config --global user.email "Syu125@users.noreply.github.com"
-        run: git add docs
+        run: git add out
         run: git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
         run: git push
         

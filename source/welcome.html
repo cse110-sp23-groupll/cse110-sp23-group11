@@ -5,30 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Tarot Cards</title>
-
   <!-- Main Stylesheets & Scripts -->
   <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:wght@200&display=swap">
+  <style>
+    html {
+      background-image: url(./images/bg1.jpg);
+      background-color: #BB4B4B;
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  </style>
   <!-- <script src="assets/scripts/main.js" type="module"></script> -->
+  <script src="script/shuffle.js"></script>
 </head>
 <body>
-  <main>
-    <div class="content">
-      <h1>Welcome</h1>
-      <p>Some quick summary of our website or something</p>
-      <button>
-      <a href="card-page.html">START READING</a>
-      </button>
+  <div id="fullpage">
+    <div class="section">
+      <header>
+        <div class="head">
+          <h2>TAROT CARD READING</h2>
+        </div>
+      </header>
+      <main>
+        <div class="content" id="section1">
+          <h1>WELCOME</h1>
+          <p>Some quick summary of our </br> website or something</p>
+          <button>
+            <a href="card-page.html"><h3>START READING</h3></a>
+          </button>
+        </div>
+        <div class="fqa-line">
+          <span>FAQ</span>
+        </div>
+        <p>Scroll down</p>
+      </main>
     </div>
-    
-    <div class="qa-section">
-      <!-- Q&A Section -->
-      <h2>Q&A</h2>
-      <p>Question 1: aaaaaaaa?</p>
-      <p>Answer 1: hhhhhhh.</p>
-      <p>Question 2: bbbbbbb?</p>
-      <p>Answer 2: hhhhhhh.</p>
-      <!-- Add more Q&A pairs as needed -->
+    <div class="section">
+      <div class="qa-outer" id="section2">
+        <!-- Q&A Section -->
+        <div class="qa-inner">
+          <p>What is a Tarot card?
+          <br><br>What is a Tarot card reading?
+          <br><br>How do I begin?
+          <br><br>What if I don't like my fortune?</p>
+          <img src="./assets/FinishedTarotCards/TarotCardBack.png" alt="back card">
+          <!-- Add more Q&A pairs as needed -->
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
+  <footer>
+    <div class="foot">
+      <h2>Team11-Skateboard->Rightfoot</h2>
+    </div>
+  </footer>
 </body>
 </html>

@@ -109,7 +109,7 @@ window.onload = function() {
     if (randomDirec === 0) {
       front.src = cardsData[i].src0;// if this number is 0, card is not reversed
     } else {
-      front.src = cardsData[i].src1;//otherwith Card is reversed
+      front.src = cardsData[i].src1;//otherwise card is reversed
       cardsData[i].direc = 1;
     }
 
@@ -156,7 +156,7 @@ window.onload = function() {
   }
   //the button would shuffle the card deck
   var shuffleButton = document.getElementById("shuffleButton");
-  if(shuffleButton){
+  if (shuffleButton) {
     shuffleButton.addEventListener("click", function() {
       for (var i = 0; i < cards.length; i++) {
         cards[i].classList.remove("flipped");

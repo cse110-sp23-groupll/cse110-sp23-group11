@@ -147,13 +147,6 @@ window.onload = function() {
           },500);
         }
       } 
-      // if allow deselect card
-      // else if (currentCard.classList.contains("flipped")) {
-      //   currentCard.classList.remove("flipped");
-      //   selectedCards = selectedCards.filter(function(card) {
-      //     return card !== currentCard;
-      //   });
-      // }
     });
   }
   //the button would shuffle the card deck

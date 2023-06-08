@@ -36,5 +36,5 @@ jobs:
         run: |
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          git push --set-upstream origin updateDocumentation
         

@@ -34,7 +34,7 @@ jobs:
         env:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
-          git pull --ff-only
+          git pull --ff-only origin updateDocumentation
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation

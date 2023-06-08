@@ -49,7 +49,7 @@ function getCardNamesFromLS() {
   
   for (const card of selectedCards) {
     const cardJSON = JSON.parse(card);
-    if (cardJSON["reversed"]) {
+    if (cardJSON["reversed"] == 1) {
       names.push(cardJSON["Name"] + " (Reversed)")
     } else {
       names.push(cardJSON["Name"]);

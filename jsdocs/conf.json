@@ -1,10 +1,10 @@
 {
     "source": {
-        "includePattern": ".+\\.js(doc|x)?$",
-        "include": ["."],
-        "exclude": ["source/eslint.config.js"]
+        "includePattern": ".js",
+        "include": ["source"],
+        "exclude": ["source/eslint.config.js", "node_modules"]
     },
-    "recurseDepth": 10,
+    "recurseDepth": 3,
     "opts": {
         "destination": "out/",
         "recurse": true

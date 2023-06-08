@@ -17,7 +17,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npm install -g jsdoc@"<=3.3.0"
+      #- run: npm install -g jsdoc@"<=3.3.0"
+      - run: npm install --save-dev jsdoc
       #- run: npm install --save-dev jest babel-jest @babel/core @babel/preset-env puppeteer jest-puppeteer
       #- run: jsdoc -c jsdocs/conf.json
       - run: npm version

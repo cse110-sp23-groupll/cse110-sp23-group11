@@ -25,7 +25,8 @@ jobs:
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "Syu125@users.noreply.github.com"
-          git checkout -b updateDocumentation
+          git fetch
+          git checkout updateDocumentation
       - name: update JSDocs
         run: |
           npm run build --if-present
@@ -34,7 +35,7 @@ jobs:
         env:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
-          git fetch
+          git pull --ff-only origin updateDocumentation
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation

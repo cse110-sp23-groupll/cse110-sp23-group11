@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "Syu125@users.noreply.github.com"
-          git checkout updateDocumentation
+          git checkout -b updateDocumentation
       - run: npm run build --if-present
       - run: npm run generate-docs
       - name: GIT commit and push documentation changes

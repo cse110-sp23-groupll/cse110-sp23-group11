@@ -33,11 +33,6 @@ header button.exit {
   color: white;
 }
 
-.newReading a {
-  text-decoration: none;
-  color: black;
-}
-
 main {
   color: white;
 }
@@ -59,25 +54,30 @@ main {
   width: 100%;
 }
 main button.newReading {
+  
+  /* Rectangle 1 */
+  margin: 1.5vh;
+  margin-bottom: 0vh;
+  /* width: 20vh;
+  height: 7vh; */
+  padding-left: 1%;
+  padding-right: 1%;
+
+  background-color: #dc7979;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.newReading a {
+  text-decoration: none;
   /* New Reading */
   font-family: 'Lexend', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 
   color: #342007;
-
-  /* Rectangle 1 */
-  margin: 1.5vh;
-  margin-bottom: 0vh;
-  width: 20vh;
-  height: 7vh;
-
-  background-color: #dc7979;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
 }
 
 main h1 {
@@ -86,7 +86,7 @@ main h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 65px;
-  margin-top: -4vh;
+  margin-top: -6vh;
   margin-bottom: 2.5vh;
   /* line-height: 94px; */
 
@@ -101,15 +101,16 @@ main h2 {
   font-family: 'Lexend', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 20px;
 
   text-align: center;
   color: #ffcaca;
+  padding: 0.1%;
 
   /* Rectangle 1 */
-  width: 70%;
+  width: 75%;
   /* width: 100vh; */
-  height: 7.5vh;
+  height: 9vh;
 
   align-items: center;
   background-color: #bb4b4b;
@@ -128,7 +129,7 @@ main h2 {
       rgba(150, 53, 53, 0.1),
       rgba(150, 53, 53, 0.1)
     ),
-    url('./image/interpretationImg.jpg');
+    url('./images/interpretationImg.jpg');
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-size: cover;

@@ -28,5 +28,13 @@
     },
     "rules":{
         "no-tabs": "off"
+    },
+    "stylelint":{
+        {
+  "rules": {
+    "color-no-invalid-hex": true,
+    "indentation":false
+  }
+}
     }
 }

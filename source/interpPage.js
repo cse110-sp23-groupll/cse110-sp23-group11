@@ -382,14 +382,12 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 const exitButton = (document.getElementsByClassName("exit"))[0];
 exitButton.addEventListener('click', () => {
   location.href = "welcome.html";
-  localStorage.clear();
 })
 
 // New reading button redirects to the card selection page
 const newReadingButton = (document.getElementsByClassName("newReading"))[0];
 newReadingButton.addEventListener('click', () => {
   location.href = "card-page.html";
-  localStorage.clear();
 })
 
 // Expand the page for recipe content
@@ -415,9 +413,11 @@ expandButton.addEventListener('click', () => {
  * @returns {Array<String>} names of cards selected by the user
  */
 function getCardNamesFromLS() {
+  // Collect card info from localStorage
   let selectedCards = [localStorage.getItem("past"), localStorage.getItem("present"), localStorage.getItem("future")];
   let names = [];
   
+  // Iterate through cards and determine if they should be reversed or not
   for (const card of selectedCards) {
     const cardJSON = JSON.parse(card);
     if (cardJSON["reversed"] == 1) {
@@ -434,9 +434,11 @@ function getCardNamesFromLS() {
  * Sets card information using past, present, and future information
  */
 function setCardProp() {
-  let cardsSelected = getCardNamesFromLS();
-  let finalInterp = document.querySelector('h2');
+  const cardsSelected = getCardNamesFromLS();
+  const finalInterp = document.querySelector('h2');
+  const descriptors = ["Past: ", "Present: ", "Future: "]
 
+  // Iterate through each card and set properties
   for (let i = 0; i < cards.length; i++) {
     const name = cardsSelected[i];
 
@@ -449,8 +451,8 @@ function setCardProp() {
     cardImg.alt = "Image for " + name;
 
     // Sets information of the back side of the card
-    backCard.querySelector('h3').innerText = name;
-    backCard.querySelector('h4').innerText = cardData[0][name]["Description"];
+    backCard.querySelector('h3').innerText = descriptors[i] + name;
+    backCard.querySelector('h4').innerText = "Present: " + cardData[0][name]["Description"];
     backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
   }
 

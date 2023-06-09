@@ -122,22 +122,29 @@ p{
   min-height: 60vh;
   max-height: 80vh;
   width: 98%;
-  padding-left: 1vh;
+  padding-left: 5vh;
+}
+
+#section2 .qa-inner h3{
+  text-align: left;
+  color: black;
+  padding-left: 5vh;
+  font-size: 16pt;
 }
 
 #section2 .qa-inner p{
   text-align: left;
   color: black;
-  padding-left: 10vh;
-  padding-top: 15vh;
-  font-size: 18pt;
+  padding-left: 5vh;
+  padding-right: 90vh;
+  font-size: 14pt;
 }
 
 img {
   position: absolute;
-  max-width: 50%;
+  width: 15%;
   height: auto;
-  right: 35vh;
+  right: 30vh;
   bottom: 22.5vh;
 }
 

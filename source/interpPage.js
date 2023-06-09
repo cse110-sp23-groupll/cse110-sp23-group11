@@ -1,4 +1,6 @@
-// Card Information as a JSON
+/**
+ * Card Information in JSON format
+ */ 
 const cardData = [{
   "The Fool": {
       "Description": "The first card of the Major Arcana, The Fool is generally a positive card indicating new beginnings.",
@@ -309,7 +311,9 @@ const cardData = [{
     }
 }];
 
-// Overall Interpretation Information as  JSON
+/**
+ * Overall Interpretation Information in JSON format
+ */ 
 const interpData = [{
   "3" : {
       "Interpretation1" : "The future is a treasure trove of limitless possibilities, eagerly waiting for you to explore and seize the abundant opportunities that lie ahead.",

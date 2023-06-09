@@ -129,49 +129,29 @@ window.onload = function() {
         drawCardResult.push(cardData);
 
         if (selectedCards.length === 3) {
-          setTimeout(function() {
-            // Show pop-up
-            //add a time out so the flip get executed before pop up
-            let confirmPopup = confirm('You drew 3 cards. Do you want to go to the interpretation page?');
-            if (confirmPopup) {
-              const keys = ["past", "present", "future"];
+          const keys = ["past", "present", "future"];
 
-              for (let j = 0; j < drawCardResult.length; j++) {
-                localStorage.setItem(keys[j], JSON.stringify(drawCardResult[j]));
-              }
-
-              window.location.href = 'interpretation.html';
-            } else {
-              location.reload();
-            }
-          },500);
+          for (let j = 0; j < drawCardResult.length; j++) {
+            localStorage.setItem(keys[j], JSON.stringify(drawCardResult[j]));
+          }
+          setTimeout(toInterp, 1000);
         }
       } 
     });
   }
-  //the button would shuffle the card deck
-  const shuffleButton = document.getElementById("shuffleButton");
-  if (shuffleButton) {
-    shuffleButton.addEventListener("click", function() {
-      for (var i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("flipped");
-      }
-      shuffle(cardsData);
-      for (var i = 0; i < cards.length; i++) {
-        let front = cards[i].querySelector(".back");
-        front.dataset.name = cardsData[i].name;
-        let redomDirec = Math.floor(Math.random() * 2);
-        if (redomDirec == 0) front.src = cardsData[i].src0;
-        else {
-          front.src = cardsData[i].src1;
-          cardsData[i].direc = 1;
-        }
-      }            
-    });
-  }
 }
 
-// shuffle card function
+/**
+ * Switches to interpretation branch
+ */
+function toInterp() {
+  window.location.href = 'interpretation.html';
+}
+
+/**
+ * Shuffles the cards initially for the user to select from
+ * @param {card[]} array
+ */
 function shuffle(array) {
   let currentIndex = array.length, temporaryValue, randomIndex;
   cardDraw = 0;// when shuffle, reset number of card draw.

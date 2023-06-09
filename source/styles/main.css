@@ -115,6 +115,7 @@ p{
 }
 
 #section2 .qa-inner {
+  overflow: auto;
   background-color: #f7e2af;
   text-align: left;
   padding: 20px;
@@ -129,20 +130,20 @@ p{
   text-align: left;
   color: black;
   padding-left: 5vh;
-  font-size: 16pt;
+  font-size: 1.15em;
 }
 
 #section2 .qa-inner p{
   text-align: left;
   color: black;
   padding-left: 5vh;
-  padding-right: 90vh;
-  font-size: 14pt;
+  padding-right: 85vh;
+  font-size: 1em;
 }
 
 img {
   position: absolute;
-  width: 15%;
+  max-width: 15%;
   height: auto;
   right: 30vh;
   bottom: 22.5vh;

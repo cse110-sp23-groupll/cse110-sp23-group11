@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for out/scripts/third-party/hljs-line-num.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">out/scripts/third-party</a> hljs-line-num.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/93</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/62</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/22</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >!<span class="fstat-no" title="function not covered" >fu</span>nction(r,o){"use strict";var e,l=<span class="cstat-no" title="statement not covered" >"hljs-ln",</span>s=<span class="cstat-no" title="statement not covered" >"hljs-ln-line",</span>f=<span class="cstat-no" title="statement not covered" >"hljs-ln-code",</span>c=<span class="cstat-no" title="statement not covered" >"hljs-ln-numbers",</span>u=<span class="cstat-no" title="statement not covered" >"hljs-ln-n",</span>h=<span class="cstat-no" title="statement not covered" >"data-line-number",</span>n=<span class="cstat-no" title="statement not covered" >/\r\n|\r|\n/g;</span>function <span class="fstat-no" title="function not covered" >t(</span>e){<span class="cstat-no" title="statement not covered" >for(var n=<span class="cstat-no" title="statement not covered" >e.toString(),</span>t=<span class="cstat-no" title="statement not covered" >e.anchorNode;</span>"TD"!==t.nodeName;)<span class="cstat-no" title="statement not covered" >t=t.parentNode;<span class="cstat-no" title="statement not covered" >f</span></span>or(var r=<span class="cstat-no" title="statement not covered" >e.focusNode;</span>"TD"!==r.nodeName;)<span class="cstat-no" title="statement not covered" >r=r.parentNode;v</span></span>ar e=<span class="cstat-no" title="statement not covered" >parseInt(t.dataset.lineNumber),</span>o=<span class="cstat-no" title="statement not covered" >parseInt(r.dataset.lineNumber);<span class="cstat-no" title="statement not covered" ></span>if(e==o)<span class="cstat-no" title="statement not covered" >return n;v</span></span>ar a,i=<span class="cstat-no" title="statement not covered" >t.textContent,</span>l=<span class="cstat-no" title="statement not covered" >r.textContent;<span class="cstat-no" title="statement not covered" ></span>for(o&lt;e&amp;&amp;(a=e,e=o,o=a,a=i,i=l,l=a);0!==n.indexOf(i);)<span class="cstat-no" title="statement not covered" >i=i.slice(1);<span class="cstat-no" title="statement not covered" >f</span></span>or(;-1===n.lastIndexOf(l);)<span class="cstat-no" title="statement not covered" >l=l.slice(0,-1);<span class="cstat-no" title="statement not covered" >f</span></span>or(var s=<span class="cstat-no" title="statement not covered" >i,</span>c=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >for(var n=<span class="cstat-no" title="statement not covered" >e;</span>"TABLE"!==n.nodeName;)<span class="cstat-no" title="statement not covered" >n=n.parentNode;<span class="cstat-no" title="statement not covered" >r</span></span>eturn n}</span>(t),</span>u=<span class="cstat-no" title="statement not covered" >e+1;</span>u&lt;o;++u){var d=<span class="cstat-no" title="statement not covered" >v('.{0}[{1}="{2}"]',[f,h,u]);<span class="cstat-no" title="statement not covered" ></span>s+="\n"+c.querySelector(d).textContent}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn s+="\n"+l}</span>function <span class="fstat-no" title="function not covered" >a(</span>e){<span class="cstat-no" title="statement not covered" >try{var n,t=<span class="cstat-no" title="statement not covered" >o.querySelectorAll("code.hljs,code.nohighlight");<span class="cstat-no" title="statement not covered" ></span>for(n in t)<span class="cstat-no" title="statement not covered" >!t.hasOwnProperty(n)||t[n].classList.contains("nohljsln")||i(t[n],e)}</span></span>catch(e){<span class="cstat-no" title="statement not covered" >r.console.error("LineNumbers error: ",e)}</span>}</span>function <span class="fstat-no" title="function not covered" >i(</span>e,n){<span class="cstat-no" title="statement not covered" >"object"==typeof e&amp;&amp;r.setTimeout(<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >e.innerHTML=d(e,n)}</span>,0)}</span>function <span class="fstat-no" title="function not covered" >d(</span>e,n){var n=<span class="cstat-no" title="statement not covered" >{singleLine:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return e.singleLine||!1}</span>(n=(n=n)||{}),startFrom:<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){var t=<span class="cstat-no" title="statement not covered" >1;<span class="cstat-no" title="statement not covered" ></span>isFinite(n.startFrom)&amp;&amp;(t=n.startFrom);<span class="cstat-no" title="statement not covered" >n</span>=<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){<span class="cstat-no" title="statement not covered" >return e.hasAttribute(n)?e.getAttribute(n):null}</span>(e,"data-ln-start-from");<span class="cstat-no" title="statement not covered" >n</span>ull!==n&amp;&amp;(t=<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){<span class="cstat-no" title="statement not covered" >if(!e)<span class="cstat-no" title="statement not covered" >return n;<span class="cstat-no" title="statement not covered" >e</span></span>=Number(e);<span class="cstat-no" title="statement not covered" >r</span>eturn isFinite(e)?e:n}</span>(n,1));<span class="cstat-no" title="statement not covered" >r</span>eturn t}</span>(e,n)},</span>e=(<span class="cstat-no" title="statement not covered" >!function <span class="fstat-no" title="function not covered" >e(</span>n){var t=<span class="cstat-no" title="statement not covered" >n.childNodes;<span class="cstat-no" title="statement not covered" ></span>for(var r in t)<span class="cstat-no" title="statement not covered" >!t.hasOwnProperty(r)||0&lt;p((r=t[r]).textContent)&amp;&amp;(0&lt;r.childNodes.length?e(r):m(r.parentNode))}</span></span>(e),e.innerHTML)</span>,t=<span class="cstat-no" title="statement not covered" >n,</span>r=<span class="cstat-no" title="statement not covered" >g(e);<span class="cstat-no" title="statement not covered" ></span>if(""===r[r.length-1].trim()&amp;&amp;r.pop(),1&lt;r.length||t.singleLine){<span class="cstat-no" title="statement not covered" >for(var o=<span class="cstat-no" title="statement not covered" >"",</span>a=<span class="cstat-no" title="statement not covered" >0,</span>i=<span class="cstat-no" title="statement not covered" >r.length;</span>a&lt;i;a++)<span class="cstat-no" title="statement not covered" >o+=v('&lt;tr&gt;&lt;td class="{0} {1}" {3}="{5}"&gt;&lt;/td&gt;&lt;td class="{0} {4}" {3}="{5}"&gt;{6}&lt;/td&gt;&lt;/tr&gt;',[s,c,u,h,f,a+t.startFrom,0&lt;r[a].length?r[a]:" "]);<span class="cstat-no" title="statement not covered" >r</span></span>eturn v('&lt;table class="{0}"&gt;{1}&lt;/table&gt;',[l,o])}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn e}</span>function <span class="fstat-no" title="function not covered" >m(</span>e){var n=<span class="cstat-no" title="statement not covered" >e.className;<span class="cstat-no" title="statement not covered" ></span>if(/hljs-/.test(n)){<span class="cstat-no" title="statement not covered" >for(var t=<span class="cstat-no" title="statement not covered" >g(e.innerHTML),</span>r=<span class="cstat-no" title="statement not covered" >0,</span>o=<span class="cstat-no" title="statement not covered" >"";</span>r&lt;t.length;r++)<span class="cstat-no" title="statement not covered" >o+=v('&lt;span class="{0}"&gt;{1}&lt;/span&gt;\n',[n,0&lt;t[r].length?t[r]:" "]);<span class="cstat-no" title="statement not covered" >e</span></span>.innerHTML=o.trim()}</span>}</span>function <span class="fstat-no" title="function not covered" >g(</span>e){<span class="cstat-no" title="statement not covered" >return 0===e.length?[]:e.split(n)}</span>function <span class="fstat-no" title="function not covered" >p(</span>e){<span class="cstat-no" title="statement not covered" >return(e.trim().match(n)||[]).length}</span>function <span class="fstat-no" title="function not covered" >v(</span>e,t){<span class="cstat-no" title="statement not covered" >return e.replace(/\{(\d+)\}/g,<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){<span class="cstat-no" title="statement not covered" >return void 0!==t[n]?t[n]:e}</span>)}<span class="cstat-no" title="statement not covered" ></span>r.hljs?(r.hljs.initLineNumbersOnLoad=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >"interactive"===o.readyState||"complete"===o.readyState?a(e):r.addEventListener("DOMContentLoaded",<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >a(e)}</span>)}</span>,r.hljs.lineNumbersBlock=i,r.hljs.lineNumbersValue=<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){var t;<span class="cstat-no" title="statement not covered" >if("string"==typeof e)<span class="cstat-no" title="statement not covered" >return(t=document.createElement("code")).innerHTML=e,d(t,n)}</span></span>,(e=o.createElement("style")).type="text/css",e.innerHTML=v(".{0}{border-collapse:collapse}.{0} td{padding:0}.{1}:before{content:attr({2})}",[l,u,h]),o.getElementsByTagName("head")[0].appendChild(e)):r.console.error("highlight.js not detected!"),document.addEventListener("copy",<span class="fstat-no" title="function not covered" >fu</span>nction(e){var n=<span class="cstat-no" title="statement not covered" >window.getSelection();<span class="cstat-no" title="statement not covered" ></span>!<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >for(var n=<span class="cstat-no" title="statement not covered" >e;</span>n;){<span class="cstat-no" title="statement not covered" >if(n.className&amp;&amp;-1!==n.className.indexOf("hljs-ln-code"))<span class="cstat-no" title="statement not covered" >return 1;<span class="cstat-no" title="statement not covered" >n</span></span>=n.parentNode}</span>}</span>(n.anchorNode)||(n=-1!==window.navigator.userAgent.indexOf("Edge")?t(n):n.toString(),e.clipboardData.setData("text/plain",n.replace(/(^\t)/gm,"")),e.preventDefault())}</span>)}</span>(window,document);</span></pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-06-09T00:40:17.103Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    

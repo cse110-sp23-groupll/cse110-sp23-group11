@@ -16,31 +16,6 @@ describe('Testing Interpretation Page', () => {
       expect(txt).toBe("Yes")
     }, 2500);
 
-    /*
-    // Check to make sure that clicking on the cards flips it
-    it('Clicking each card should flip it', async () => {
-      console.log('Checking the first card...');
-      await page.click('div.card:nth-child(1) > div:nth-child(1) > img:nth-child(1)');
-      const cardClicked1 = await page.evaluate(() => {
-        return !!document.querySelector('div.card.now.is-flipped') 
-      });
-
-      console.log('Checking the second card...');
-      await page.click('div.card:nth-child(2) > div:nth-child(1) > img:nth-child(1)');  
-      const cardClicked2 = await page.evaluate(() => {
-        return !!document.querySelector('div.card.future.is-flipped')
-      });
-
-      console.log('Checking the last card...');
-      await page.click('div.card:nth-child(3) > div:nth-child(1) > img:nth-child(1)');
-      const cardClicked3 = await page.evaluate(() => {
-        return !!document.querySelector('div.card.past.is-flipped') 
-      });
-      expect(cardClicked1).toBe(true);
-      expect(cardClicked2).toBe(true);
-      expect(cardClicked3).toBe(true);
-    }, 2500);*/
-
     // Check to make sure that clicking 'New Reaading' takes the user to the right page
     it('Clicking \'New Reading\' goes to second page', async () => {
       console.log('Clicking the button...');

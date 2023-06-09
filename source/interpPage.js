@@ -452,7 +452,7 @@ function setCardProp() {
 
     // Sets information of the back side of the card
     backCard.querySelector('h3').innerText = descriptors[i] + name;
-    backCard.querySelector('h4').innerText = "Present: " + cardData[0][name]["Description"];
+    backCard.querySelector('h4').innerText = cardData[0][name]["Description"];
     backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
   }
 

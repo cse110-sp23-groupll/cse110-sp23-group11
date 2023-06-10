@@ -42,10 +42,8 @@ jobs:
           git checkout updateDocumentation
           git pull --ff-only origin updateDocumentation
           git stash pop
-          git checkout --theirs .
-          git add .          
-          git merge --strategy-option theirs .
-          git merge --strategy-option theirs out
+          git checkout --theirs out
+          git add out          
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation
         

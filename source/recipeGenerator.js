@@ -5,10 +5,6 @@ const saveRecipesToStorage = (recipes) => {
     localStorage.setItem('recipes', JSON.stringify(recipes));
 }
 
-const randomNumberGenerator = ()=> {
-    return Math.floor(Math.random() * 100);
-}
-
 // save recipes.json to local storage and add event listener to expand button
 function init(){
     // you may change the variable below (button, recipeContainer) to fit html file
@@ -27,7 +23,6 @@ function init(){
     });
 }
 
-
 /**
  *  @param {int} index index of recipe in localStorage (recipes.json), It would be randomized index
  *  @returns {Array<Object>} recipe from localstorage of given index
@@ -45,11 +40,10 @@ function getRecipeFromStorage(index) {
  * @param {String} recipeContainer//for recipe container
  */
 
-// generate randomize recipe when click the button (per page refresh)
+// get recipeIndex from localStorage and generate recipe
 function GenerateButtonHandler(button, recipeContainer) {
     const main = document.querySelector(recipeContainer);
     const btn = document.querySelector(button);
-    //const randomizedIdx = randomNumberGenerator();
     const randomizedIdx = parseInt(localStorage.getItem('recipeIndex'));
     const recipeArticle = document.createElement('custom-recipe');
     btn.addEventListener('click', async () => {

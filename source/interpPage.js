@@ -382,16 +382,12 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 const exitButton = (document.getElementsByClassName("exit"))[0];
 exitButton.addEventListener('click', () => {
   window.location.href = "welcome.html";
-  localStorage.removeItem("interpretation");
-  localStorage.removeItem("recipeIndex");
 })
 
 // New reading button redirects to the card selection page
 const newReadingButton = (document.getElementsByClassName("newReading"))[0];
 newReadingButton.addEventListener('click', () => {
   window.location.href = "card-page.html";
-  localStorage.removeItem("interpretation");
-  localStorage.removeItem("recipeIndex");
 })
 
 // Expand the page for recipe content

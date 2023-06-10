@@ -17,8 +17,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npm install --save-dev jsdoc
-      - run: npm version
       - name: GIT create new branch
         env:
           CI_COMMIT_AUTHOR: Sophia Yu
@@ -27,7 +25,11 @@ jobs:
           git config --global user.email "Syu125@users.noreply.github.com"
           git fetch
           git checkout updateDocumentation
-      - name: update JSDocs
+      - name: install JSDocs
+        run: |
+          npm install --save-dev jsdoc
+          npm version
+      - name: update documentation
         run: |
           npm run build --if-present
           npm run generate-docs
@@ -36,6 +38,8 @@ jobs:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
           git pull --ff-only origin updateDocumentation
+          git add package.json
+          git add package-lock.json
           git add out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation

@@ -16,7 +16,7 @@ const cardsData = [
     src0: "./assets/UniformResolution/Strength.png",
     src1: "./assets/UniformResolution/StrengthReversed.png",
     direc: 0},
-    {name: "Wheel Of Fortune", 
+    {name: "Wheel of Fortune", 
     src0: "./assets/UniformResolution/WheelOfFortune.png",
     src1: "./assets/UniformResolution/WheelOfFortuneReversed.png",
     direc: 0},

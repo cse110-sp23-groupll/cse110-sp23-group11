@@ -24,6 +24,13 @@ jobs:
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "Syu125@users.noreply.github.com"
           git fetch
+      - name: Switch branches and update based on main
+        env:
+          CI_COMMIT_MESSAGE: Documentation Update
+        run: |
+          git checkout updateDocumentation
+          git merge --strategy-option=theirs main
+          echo "[MERGED]"
       - name: install JSDocs
         run: |
           npm install --save-dev jsdoc
@@ -32,21 +39,8 @@ jobs:
         run: |
           npm run build --if-present
           npm run generate-docs
-      - name: stash documentation changes
-        run: |
-          git stash
-      - name: GIT commit and push documentation changes
-        env:
-          CI_COMMIT_MESSAGE: Documentation Update
-        run: |
-          git checkout updateDocumentation
-          echo "switch to doc branch"
-          git stash apply --no-merge
-          echo "Stash applied"
-          git add .         
-          git checkout --theirs .
-          echo "Checked out"
-          git status
+      - name: Commit to GIT
+          git add .
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation
         

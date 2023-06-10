@@ -20,6 +20,7 @@ jobs:
           HTML_FILENAME: .htmlhintrc
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
           FILTER_REGEX_EXCLUDE: .*out/.*
+          FILTER_REGEX_INCLUDE: .*source/.*
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_HTML: true
           VALIDATE_CSS: true

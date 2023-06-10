@@ -184,13 +184,15 @@ document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("myAudio");
   var playButton = document.getElementById("playButton");
   
-  playButton.addEventListener("click", function() {
-    if (audio.paused) {
-      audio.play();
-      playIcon.src = "./images/unmute.png";
-    } else {
-      audio.pause();
-      playIcon.src = "./images/mute.png";
-    }
-  });
+  if (playButton) {
+    playButton.addEventListener("click", function() {
+      if (audio.paused) {
+        audio.play();
+        playIcon.src = "./images/unmute.png";
+      } else {
+        audio.pause();
+        playIcon.src = "./images/mute.png";
+      }
+    });
+  }
 });

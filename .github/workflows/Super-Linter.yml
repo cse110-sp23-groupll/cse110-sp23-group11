@@ -17,6 +17,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: .github/rules/
           CSS_FILE_NAME: .stylelintrc
+          HTML_FILENAME: .htmlhintrc
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_HTML: true
           VALIDATE_CSS: true

@@ -378,6 +378,14 @@ const cards = document.querySelectorAll(".card");
 
 setCardProp();
 
+// Plays audio if transitioning from the card selection page
+if (parseInt(localStorage.getItem("audioPlay")) == 0) {
+  const tada = new Audio("audios\\tada.mp3");
+  tada.volume = 0.75;
+  tada.play();
+  localStorage.setItem("audioPlay", 1);
+}
+
 cards.forEach(card => card.addEventListener("click", flipCard));
 
 // Exit page button redirects to the welcome page

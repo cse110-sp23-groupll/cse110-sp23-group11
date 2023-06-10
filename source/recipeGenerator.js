@@ -28,8 +28,8 @@ function init(){
 
 
 /**
- *  @param {int} index
- *  @returns {Array<Object>} recipe
+ *  @param {int} index index of recipe in localStorage (recipes.json), It would be randomized index
+ *  @returns {Array<Object>} recipe from localstorage of given index
 **/
 // returns recipe from localstorage recipes data
 function getRecipeFromStorage(index) {
@@ -40,8 +40,8 @@ function getRecipeFromStorage(index) {
 
 /**
  * string for queryselector
- * @param {String} button //for recipe generate button
- * @param {String} recipeContainer//for recipe container
+ * @param {String} button for recipe generate button
+ * @param {String} recipeContainer for recipe container
  */
 
 // generate randomize recipe when click the button (per page refresh)
@@ -52,7 +52,7 @@ function GenerateButtonHandler(button, recipeContainer) {
 
     // If index is currently in localStorage, then reuse recipe since must not have been performed
     if (localStorage.getItem("recipeIndex") != null) {
-        randomizedIdx = localStorage.getItem("recipeIndex");
+        randomizedIdx = parseInt(localStorage.getItem("recipeIndex"));
     } else {
         localStorage.setItem("recipeIndex", randomizedIdx);
     }

@@ -11,19 +11,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:wght@200&display=swap">
   <style>
     html {
-      background-image: url(./images/bg1.jpg);
+      background-image: url(./images/welcome.jpeg);
       background-color: #BB4B4B;
-      background-size: cover;
-      background-repeat: repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   </style>
-  <!-- <script src="assets/scripts/main.js" type="module"></script> -->
-  <script src="script/shuffle.js"></script>
 </head>
+
+<script src="script/shuffle.js"></script>
+
 <body>
   <div id="fullpage">
     <div class="section">
       <header>
+        <!-- Header with site name -->
         <div class="head">
           <h2>TAROT CARD READING</h2>
         </div>
@@ -31,7 +33,8 @@
       <main>
         <div class="content" id="section1">
           <h1>WELCOME</h1>
-          <p>Some quick summary of our </br> website or something</p>
+          <p>Get a Tarot Card reading and a delicious recipe!</p>
+          <!-- Start Button -->
           <button>
             <a href="card-page.html"><h3>START READING</h3></a>
           </button>
@@ -46,10 +49,26 @@
       <div class="qa-outer" id="section2">
         <!-- Q&A Section -->
         <div class="qa-inner">
-          <p>What is a Tarot card?
-          <br><br>What is a Tarot card reading?
-          <br><br>How do I begin?
-          <br><br>What if I don't like my fortune?</p>
+          <h3>What is a Tarot card?</h3>
+          <p>
+            A Tarot card is a playing card used to divine future. 
+            There are a total of 78 cards in the standard tarot deck, but we use the 22 Major Arcana cards here.
+          </p>
+
+          <h3>What is a Tarot card reading?</h3>
+          <p>Tarot card readings are the practice of using the Tarot card deck to provide insight and guidance for one's future.</p>
+
+          <h3>How do I begin?</h3>
+          <p>
+            First, think of a question or topic you would like guidance for. 
+            Then click the "Start Reading" button. 
+            You'll select three cards and be taken to your fortune. 
+            Don't forget to click on the "Recipe" button to get a fun recipe with your fortune!
+          </p>
+
+          <h3>What if I don't like my fortune?</h3>
+
+          <p>Simply click on the "New Reading" button at the top right of the fortune screen and select three new cards.</p>
           <img src="./assets/FinishedTarotCards/TarotCardBack.png" alt="back card">
           <!-- Add more Q&A pairs as needed -->
         </div>
@@ -58,7 +77,7 @@
   </div>
   <footer>
     <div class="foot">
-      <h2>Team11-Skateboard->Rightfoot</h2>
+      <h2>Team11-Skateboard-&gt;Rightfoot</h2>
     </div>
   </footer>
 </body>

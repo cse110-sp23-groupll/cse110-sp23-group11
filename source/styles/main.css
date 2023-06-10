@@ -119,7 +119,7 @@ p{
   padding-right: 2vh;
   min-height: 60vh;
   min-width: 40vh;
-  margin-bottom: 0%;
+
 }
 
 #section2 .qa-inner {
@@ -130,7 +130,7 @@ p{
   border-radius: 10px;
   min-height: 60vh;
   max-height: 80vh;
-  width: 98%;
+  width: 100%;
   padding-left: 5vh;
   box-shadow: 5px 0px 40px;
 }
@@ -146,7 +146,7 @@ p{
   text-align: left;
   color: black;
   padding-left: 5vh;
-  padding-right: 85vh;
+  padding-right: 5vh;
   font-size: 1em;
 }
 

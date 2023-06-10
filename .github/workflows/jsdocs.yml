@@ -40,7 +40,6 @@ jobs:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
           git checkout updateDocumentation
-          git pull --ff-only origin updateDocumentation
           git stash pop
           echo "Stash popped"
           git checkout --theirs .

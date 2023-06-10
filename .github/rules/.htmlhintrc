@@ -1,10 +1,11 @@
 {
   "attr-no-duplication": true,
+  "attr-value-double-quotes": false,
   "doctype-first": true,
   "inline-script-disabled": true,
   "inline-style-disabled": true,
   "title-require": true,
   "space-tab-mixed-disabled": tab,
-  "tagname-lowercase": true,
-  "attr-value-double-quotes": false
+  "tagname-lowercase": true
+  
 }

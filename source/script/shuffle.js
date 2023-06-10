@@ -169,17 +169,14 @@ function shuffle(array) {
   }
 }
 /**
+ * this is the button to toggle music on or off on the page
+ * the music is not playing bu default
  * @type {audio} the backgroundMusic
- * @type {button} this toggle button should toggle music on or off
+ * @type {playButton} this toggle button should toggle music on or off
  */
 document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("myAudio");
   var playButton = document.getElementById("playButton");
-  if(audio){
-    audio.addEventListener("canplaythrough", function() {
-      audio.play();
-    });
-  }
   
   playButton.addEventListener("click", function() {
     if (audio.paused) {

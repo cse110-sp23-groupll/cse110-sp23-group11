@@ -5,5 +5,6 @@
   "inline-style-disabled": true,
   "title-require": true,
   "space-tab-mixed-disabled": tab,
-  "tagname-lowercase": true
+  "tagname-lowercase": true,
+  "attr-value-double-quotes": false
 }

@@ -29,7 +29,7 @@ jobs:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
           git checkout updateDocumentation
-          git merge --strategy-option=theirs main
+          git merge --strategy-option=theirs main --allow-unrelated-histories
       - name: install JSDocs
         run: |
           npm install --save-dev jsdoc

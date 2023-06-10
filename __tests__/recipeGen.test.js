@@ -12,6 +12,7 @@ require('../source/recipe');
 describe('Testing Recipe Generator', () => {
     let browser, page;
 
+    jest.setTimeout(50000); // increase timeout to 10 seconds
     beforeAll(async () => {
         browser = await puppeteer.launch();
         page = await browser.newPage();

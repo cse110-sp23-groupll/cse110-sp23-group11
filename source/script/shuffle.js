@@ -146,9 +146,15 @@ window.onload = function() {
  */
 function toInterp() {
   // Ensure that the following localStorage items are only cleared after a new reading has been completed
-  localStorage.removeItem("interpretation");
-  localStorage.removeItem("recipeIndex");
+  keyItems = ["interpretation", "recipeIndex"];
+  for (const key of keyItems) {
+    if (localStorage.getItem(key) != null) {
+      localStorage.removeItem(key)
+    }
+  }
+  localStorage.setItem("audioPlay", 0);
   window.location.href = 'interpretation.html';
+  console.log(yay);
 }
 
 /**

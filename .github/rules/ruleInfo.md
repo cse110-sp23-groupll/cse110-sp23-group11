@@ -8,3 +8,12 @@ document but I will give links to a rulesheet with better descriptions.
 3. string-no-newline: No newlines in strings. 
 4. named-grid-areas-no-invalid" All grids must form a rectangle.
 5. no-irregular-whitespace: No weird whitespaces. 
+
+## HTML rules https://htmlhint.com/docs/user-guide/list-rules
+1. attr-no-duplication: HTML elements cannot have dulplicate attributes. 
+2. doctype-first: Doctype must be declared first in a file. 
+3. inline-script-disabled: No inline scripts. Use script tag or use another file.
+4. inline-style-disabled: No inline style. Use style tag or use another file.
+5. title-require: Title tag must be present in head. 
+6. space-tab-mixed-disabled: Tab mode is enabled. All indentation must use tabs. 
+7. tagname-lowercase: All tags must be lowercase. 

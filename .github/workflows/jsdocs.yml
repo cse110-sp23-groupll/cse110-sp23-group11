@@ -45,6 +45,7 @@ jobs:
           git checkout --theirs .
           git add .          
           git merge --strategy-option theirs .
+          git merge --strategy-option theirs out
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation
         

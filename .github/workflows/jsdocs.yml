@@ -41,8 +41,8 @@ jobs:
         run: |
           git checkout updateDocumentation
           git pull --ff-only origin updateDocumentation
-          git checkout --theirs out
           git stash pop
+          git checkout --theirs .
           git add .         
           git status
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"

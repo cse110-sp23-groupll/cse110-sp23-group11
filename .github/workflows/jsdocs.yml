@@ -41,8 +41,8 @@ jobs:
         run: |
           git checkout updateDocumentation
           echo "switch to doc branch"
-          git stash pop
-          echo "Stash popped"
+          git stash apply
+          echo "Stash applied"
           git checkout --theirs .
           echo "Checked out"
           git add .         

@@ -41,7 +41,7 @@ jobs:
         run: |
           git checkout updateDocumentation
           echo "switch to doc branch"
-          git stash apply
+          git stash apply --no-merge
           echo "Stash applied"
           git add .         
           git checkout --theirs .

@@ -1,3 +1,9 @@
 {
-  "attr-value-not-empty": false
+  "attr-no-duplication": true,
+  "doctype-first": true,
+  "inline-script-disabled": true,
+  "inline-style-disabled": true,
+  "title-require": true,
+  "space-tab-mixed-disabled": tab,
+  "tagname-lowercase": true
 }

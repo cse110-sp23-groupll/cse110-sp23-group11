@@ -94,11 +94,15 @@ const cardsData = [
 let selectedCards = [];
 let drawCardResult = [];
 
+// random number index generator for recipe Generate
+const randomNumberGenerator = ()=> {
+  return Math.floor(Math.random() * 100);
+}
+
 window.onload = function() {
   shuffle(cardsData);
   //initialize card data
   const cards = document.getElementsByClassName("card");
-
   for (let i = 0; i < cards.length; i++) {
     let front = cards[i].querySelector(".back");
     let cardId = cardsData[i].name;//get what card it is
@@ -127,13 +131,14 @@ window.onload = function() {
         };
 
         drawCardResult.push(cardData);
-
+        
         if (selectedCards.length === 3) {
+          const recipeIndex = randomNumberGenerator();
           const keys = ["past", "present", "future"];
-
           for (let j = 0; j < drawCardResult.length; j++) {
             localStorage.setItem(keys[j], JSON.stringify(drawCardResult[j]));
           }
+          localStorage.setItem("recipeIndex", recipeIndex.toString());
           setTimeout(toInterp, 1000);
         }
       } 

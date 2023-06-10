@@ -49,7 +49,8 @@ function getRecipeFromStorage(index) {
 function GenerateButtonHandler(button, recipeContainer) {
     const main = document.querySelector(recipeContainer);
     const btn = document.querySelector(button);
-    const randomizedIdx = randomNumberGenerator();
+    //const randomizedIdx = randomNumberGenerator();
+    const randomizedIdx = parseInt(localStorage.getItem('recipeIndex'));
     const recipeArticle = document.createElement('custom-recipe');
     btn.addEventListener('click', async () => {
         const recipeData = await getRecipeFromStorage(randomizedIdx);

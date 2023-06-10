@@ -43,6 +43,7 @@ jobs:
           git pull --ff-only origin updateDocumentation
           git stash pop
           git merge --strategy-option theirs
+          git checkout --theirs .
           git add .
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation

@@ -14,10 +14,15 @@
   <script src="script/shuffle.js"></script>
 </head>
 <body>
+  <audio id="myAudio" loop autoplay>
+    <source src="./audios/cookingMamaAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
   <header>
     <nav>
       <a href="welcome.html" title="Go to main page"><p>EXIT</p></a>
     </nav>
+    <button id="toggleButton">Toggle Music</button>
   </header>
   <main>
     <h1 class="font-with-border">Select three cards</h1>

@@ -17,3 +17,6 @@ document but I will give links to a rulesheet with better descriptions.
 5. title-require: Title tag must be present in head. 
 6. space-tab-mixed-disabled: Tab mode is enabled. All indentation must use tabs. 
 7. tagname-lowercase: All tags must be lowercase. 
+
+## Javascript rules https://eslint.org/docs/latest/rules/
+All of the reccomended rules(marked with green checkmark) are enablded. 

@@ -3,6 +3,7 @@
         "@babel/core": "^7.22.1",
         "@babel/preset-env": "^7.22.4",
         "babel-jest": "^27.5.1",
+        "clean-jsdoc-theme": "^4.2.7",
         "jest": "^27.5.1",
         "jest-puppeteer": "^6.2.0",
         "jsdoc": "^4.0.2",

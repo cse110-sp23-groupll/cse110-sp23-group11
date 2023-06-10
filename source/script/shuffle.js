@@ -177,11 +177,6 @@ function shuffle(array) {
 document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("myAudio");
   var playButton = document.getElementById("playButton");
-  if(audio){
-    audio.addEventListener("canplaythrough", function() {
-      audio.play();
-    });
-  }
   
   playButton.addEventListener("click", function() {
     if (audio.paused) {

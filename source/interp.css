@@ -286,9 +286,8 @@ h4 {
   justify-content: start;
   background-color: #dda02d;
   min-height: 100px; /* Minimum height of the box */
-  max-height: 500px; /* Maximum height of the box */
-  overflow-y: auto; /* Enables scroll if content exceeds the maximum height */
-  padding: 10px;
+  max-height: 1000px; /* Maximum height of the box */
+  padding: 20px;
 }
 .expanded {
   height: 200vh;

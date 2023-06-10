@@ -381,13 +381,13 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 // Exit page button redirects to the welcome page
 const exitButton = (document.getElementsByClassName("exit"))[0];
 exitButton.addEventListener('click', () => {
-  location.href = "welcome.html";
+  window.location.href = "welcome.html";
 })
 
 // New reading button redirects to the card selection page
 const newReadingButton = (document.getElementsByClassName("newReading"))[0];
 newReadingButton.addEventListener('click', () => {
-  location.href = "card-page.html";
+  window.location.href = "card-page.html";
 })
 
 // Expand the page for recipe content

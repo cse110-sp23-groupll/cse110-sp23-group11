@@ -49,6 +49,8 @@ function GenerateButtonHandler(button, recipeContainer) {
     const main = document.querySelector(recipeContainer);
     const btn = document.querySelector(button);
     let randomizedIdx = randomNumberGenerator();
+
+    // If index is currently in localStorage, then reuse recipe since must not have been performed
     if (localStorage.getItem("recipeIndex") != null) {
         randomizedIdx = localStorage.getItem("recipeIndex");
     } else {

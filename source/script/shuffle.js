@@ -145,6 +145,8 @@ window.onload = function() {
  * Switches to interpretation branch
  */
 function toInterp() {
+  // Ensure that localStorage is only cleared after a new reading has been completed
+  localStorage.clear();
   window.location.href = 'interpretation.html';
 }
 

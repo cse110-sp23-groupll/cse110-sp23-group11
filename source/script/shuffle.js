@@ -145,6 +145,9 @@ window.onload = function() {
  * Switches to interpretation branch
  */
 function toInterp() {
+  // Ensure that the following localStorage items are only cleared after a new reading has been completed
+  localStorage.removeItem("interpretation");
+  localStorage.removeItem("recipeIndex");
   window.location.href = 'interpretation.html';
 }
 

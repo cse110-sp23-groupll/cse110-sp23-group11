@@ -48,7 +48,14 @@ function getRecipeFromStorage(index) {
 function GenerateButtonHandler(button, recipeContainer) {
     const main = document.querySelector(recipeContainer);
     const btn = document.querySelector(button);
-    const randomizedIdx = randomNumberGenerator();
+    let randomizedIdx = randomNumberGenerator();
+
+    // If index is currently in localStorage, then reuse recipe since must not have been performed
+    if (localStorage.getItem("recipeIndex") != null) {
+        randomizedIdx = localStorage.getItem("recipeIndex");
+    } else {
+        localStorage.setItem("recipeIndex", randomizedIdx);
+    }
     const recipeArticle = document.createElement('custom-recipe');
     btn.addEventListener('click', async () => {
         const recipeData = await getRecipeFromStorage(randomizedIdx);

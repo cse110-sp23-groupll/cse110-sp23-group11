@@ -39,6 +39,7 @@ jobs:
         env:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
+          git branch updateDocumentation
           git checkout updateDocumentation
           git stash pop
           git pull --ff-only origin updateDocumentation

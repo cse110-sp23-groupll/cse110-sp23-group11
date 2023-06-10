@@ -1,7 +1,8 @@
 /**
  * Card Information in JSON format
+ * @type {JSON}
  */ 
-const cardData = [{
+const cardData = {
   "The Fool": {
       "Description": "The first card of the Major Arcana, The Fool is generally a positive card indicating new beginnings.",
       "Source": "assets\\UniformResolution\\TheFool.png",
@@ -309,12 +310,13 @@ const cardData = [{
       "Interpretation": "You may be throwing all your energy into trying to make something work that is not working for you. So if you've thrown everything you've got a something and it's still not working for you, The World reversed may be telling you that it's time to accept the disappointment and cut your losses.",
       "Value": -1
     }
-}];
+};
 
 /**
  * Overall Interpretation Information in JSON format
+ * @type {JSON}
  */ 
-const interpData = [{
+const interpData = {
   "3" : {
       "Interpretation1" : "The future is a treasure trove of limitless possibilities, eagerly waiting for you to explore and seize the abundant opportunities that lie ahead.",
       "Interpretation2" : "As you navigate through challenges with unwavering determination, you will uncover your incredible resilience and witness your own transformative growth, propelling you towards a future adorned with remarkable achievements.",
@@ -370,7 +372,7 @@ const interpData = [{
       "Interpretation4" : "The threads of fate are entangled, foretelling of turbulent times and uncertain outcomes that will require unwavering determination and adaptability to navigate.",
       "Interpretation5" : "Beware of the deceptive allure that may surround you in the days to come, for not all that glitters is gold. Trust your instincts and tread cautiously to protect yourself from potential pitfalls and betrayals."         
   }
-}];
+};
 
 const cards = document.querySelectorAll(".card");
 
@@ -431,7 +433,7 @@ function getCardNamesFromLS() {
 }
 
 /**
- * Sets card information using past, present, and future information
+ * Sets card information using past, present, and future information. Iterates through the cards selected and sets their data using the JSON information.
  */
 function setCardProp() {
   const cardsSelected = getCardNamesFromLS();
@@ -447,13 +449,13 @@ function setCardProp() {
 
     // Sets the image and name for the front side of the card
     cards[i].querySelector('h3').innerText = name;
-    cardImg.src = cardData[0][name]["Source"]
+    cardImg.src = cardData[name]["Source"]
     cardImg.alt = "Image for " + name;
 
     // Sets information of the back side of the card
     backCard.querySelector('h3').innerText = descriptors[i] + name;
-    backCard.querySelector('h4').innerText = cardData[0][name]["Description"];
-    backCard.querySelector('p').innerText = cardData[0][name]["Interpretation"];
+    backCard.querySelector('h4').innerText = cardData[name]["Description"];
+    backCard.querySelector('p').innerText = cardData[name]["Interpretation"];
   }
 
   // Overall interpretation randomized using the values of the cards selected
@@ -476,14 +478,14 @@ function randomInterp(cardNames) {
   
   // Sums up the card values
   for (const name of cardNames) {
-    total += cardData[0][name]["Value"];
+    total += cardData[name]["Value"];
   }
 
   // Picks one of 5 possible interpretations for that sum combination
   let randomChoice = Math.floor(Math.random() * 5) + 1;
 
   // Store interpretation in local storage for later use
-  let interpretation = interpData[0][total.toString()]["Interpretation" + randomChoice];
+  let interpretation = interpData[total.toString()]["Interpretation" + randomChoice];
   localStorage.setItem("interpretation", interpretation)
 
   return interpretation;

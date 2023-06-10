@@ -11,7 +11,7 @@
     },
     "scripts": {
         "test": "jest",
-        "generate-docs": "jsdoc -c jsdocs/conf.json"
+        "generate-docs": "jsdoc -c jsdocs/conf.json --verbose"
     },
     "jest": {
         "preset": "jest-puppeteer",

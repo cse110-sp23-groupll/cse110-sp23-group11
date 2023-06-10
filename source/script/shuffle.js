@@ -172,17 +172,22 @@ function shuffle(array) {
  * @type {audio} the backgroundMusic
  * @type {button} this toggle button should toggle music on or off
  */
-let audio = document.getElementById("myAudio");
-let toggleButton = document.getElementById("toggleButton");
-
-if(toggleButton){
-  toggleButton.addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("myAudio");
+  var playButton = document.getElementById("playButton");
+  if(audio){
+    audio.addEventListener("canplaythrough", function() {
+      audio.play();
+    });
+  }
+  
+  playButton.addEventListener("click", function() {
     if (audio.paused) {
       audio.play();
-      toggleButton.innerHTML = "Pause Music";
+      playIcon.src = "./images/unmute.png";
     } else {
       audio.pause();
-      toggleButton.innerHTML = "Play Music";
+      playIcon.src = "./images/mute.png";
     }
   });
-}
+});

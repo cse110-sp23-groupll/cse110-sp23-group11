@@ -3,7 +3,8 @@
     "color-no-invalid-hex": true,
     "no-invalid-position-at-import-rule": true,
     "string-no-newline": true,
-    "named-grid-areas-no-invalid": true
+    "named-grid-areas-no-invalid": true,
+    "no-irregular-whitespace": true
     
   }
 }

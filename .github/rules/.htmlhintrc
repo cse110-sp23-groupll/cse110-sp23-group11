@@ -1,7 +1,5 @@
 {
   "attr-no-duplication": true,
-  "attr-value-double-quotes": false,
-  "attr-value-single-quotes": true,
   "doctype-first": true,
   "inline-script-disabled": true,
   "inline-style-disabled": true,

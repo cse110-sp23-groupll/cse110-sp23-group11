@@ -33,13 +33,14 @@ jobs:
           npm run build --if-present
           npm run generate-docs
       - name: stash documentation changes
-        run: git stash
+        run: |
+          git stash
       - name: GIT commit and push documentation changes
         env:
           CI_COMMIT_MESSAGE: Documentation Update
         run: |
-          git branch updateDocumentation
           git checkout updateDocumentation
+          git pull --ff-only origin updateDocumentation
           git stash pop
           git add package.json
           git add package-lock.json

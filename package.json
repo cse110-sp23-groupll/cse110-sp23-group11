@@ -6,7 +6,6 @@
         "clean-jsdoc-theme": "^4.2.7",
         "jest": "^27.5.1",
         "jest-puppeteer": "^6.2.0",
-        "jsdoc": "^4.0.2",
         "jsdom": "^22.1.0",
         "puppeteer": "^11.0.0"
     },

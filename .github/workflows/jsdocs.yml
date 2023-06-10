@@ -27,7 +27,7 @@ jobs:
       - name: Switch branches and update based on main
         run: |
           git checkout updateDocumentation
-          git merge --strategy-option=theirs main --allow-unrelated-histories
+          git merge --strategy-option=theirs origin/main --allow-unrelated-histories
       - name: install JSDocs
         run: |
           npm install --save-dev jsdoc

@@ -41,12 +41,11 @@ jobs:
         run: |
           git checkout updateDocumentation
           echo "switch to doc branch"
-          git status
           git stash apply
           echo "Stash applied"
+          git add .         
           git checkout --theirs .
           echo "Checked out"
-          git add .         
           git status
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation

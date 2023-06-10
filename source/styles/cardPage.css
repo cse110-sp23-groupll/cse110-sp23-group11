@@ -8,6 +8,7 @@ main {
   margin-right: 2%;
   align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 .font-with-border {
@@ -71,7 +72,11 @@ a {
   transform: rotateY(0deg);
 }
 
-#shuffleButton {
+#toggleButton {
+  margin-top: 10px;
+}
+
+/* #shuffleButton {
   margin-top: 1cm;
   margin-bottom: 2cm;
   background-color: #873326e6;
@@ -86,5 +91,5 @@ a {
 
 #shuffleButton:hover {
   background-color: #d96856e6;
-}
+} */
 

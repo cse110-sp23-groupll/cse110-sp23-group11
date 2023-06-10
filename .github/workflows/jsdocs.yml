@@ -42,7 +42,6 @@ jobs:
           git branch updateDocumentation
           git checkout updateDocumentation
           git stash pop
-          git pull --ff-only origin updateDocumentation
           git add package.json
           git add package-lock.json
           git add out

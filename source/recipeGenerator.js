@@ -9,6 +9,7 @@ const randomNumberGenerator = ()=> {
     return Math.floor(Math.random() * 100);
 }
 
+// save recipes.json to local storage and add event listener to expand button
 function init(){
     // you may change the variable below (button, recipeContainer) to fit html file
     const button = '#expand-btn' // selector for recipe generate button
@@ -28,8 +29,8 @@ function init(){
 
 
 /**
- *  @param {int} index
- *  @returns {Array<Object>} recipe
+ *  @param {int} index index of recipe in localStorage (recipes.json), It would be randomized index
+ *  @returns {Array<Object>} recipe from localstorage of given index
 **/
 // returns recipe from localstorage recipes data
 function getRecipeFromStorage(index) {

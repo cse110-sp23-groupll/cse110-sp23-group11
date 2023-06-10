@@ -44,6 +44,7 @@ jobs:
           git stash pop
           git checkout --theirs out
           git add .         
+          git status
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push --set-upstream origin updateDocumentation
         

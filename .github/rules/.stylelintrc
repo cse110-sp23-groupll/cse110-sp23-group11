@@ -1,6 +1,9 @@
 {
   "rules": {
     "color-no-invalid-hex": true,
-    "indentation":false
+    "no-invalid-position-at-import-rule": true,
+    "string-no-newline": true,
+    "named-grid-areas-no-invalid": true
+    
   }
 }

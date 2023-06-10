@@ -8,10 +8,17 @@ describe('Basic user flow of website', () => {
     // Check to make sure that clicking 'START READING' takes you to the next page
     it('Clicking \'START READING\' it should go to the next page', async () => {
         console.log('Clicking the button...'); 
+        /*
         await page.evaluate(() => {
             document.querySelector('#section1 > button:nth-child(3) > a:nth-child(1)').click(); 
-        }); 
-        await page.waitForNavigation();
+        }); */
+        await Promise.all([
+            page.$eval('#section1 > button:nth-child(3) > a:nth-child(1)', element =>
+              element.click()
+            ),
+            await page.waitForNavigation(),
+        ]);
+        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
@@ -151,10 +158,17 @@ describe('Basic user flow of website', () => {
     it('Clicking \'New Reading\' goes to first page', async () => {
         console.log('THIS IS THE LINK BEFORE PRESSING EXIT: ', await page.url());
         console.log('Clicking the button...'); 
+        /*
         await page.evaluate(() => {
             document.querySelector('.newReading > a:nth-child(1) > p:nth-child(1)').click(); 
-        }); 
-        await page.waitForNavigation();
+        }); */
+        await Promise.all([
+            page.$eval('.newReading > a:nth-child(1) > p:nth-child(1)', element =>
+              element.click()
+            ),
+            await page.waitForNavigation(),
+        ]);
+        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
@@ -292,10 +306,17 @@ describe('Basic user flow of website', () => {
     it('Clicking \'EXIT\' goes to first page', async () => {
         console.log('THIS IS THE LINK BEFORE PRESSING EXIT: ', await page.url());
         console.log('Clicking the button...'); 
+        /*
         await page.evaluate(() => {
             document.querySelector('.exit > a:nth-child(1) > p:nth-child(1)').click(); 
-        }); 
-        await page.waitForNavigation();
+        }); */
+        await Promise.all([
+            page.$eval('.exit > a:nth-child(1) > p:nth-child(1)', element =>
+              element.click()
+            ),
+            await page.waitForNavigation(),
+        ]);
+        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);

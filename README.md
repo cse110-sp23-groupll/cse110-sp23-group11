@@ -8,7 +8,7 @@ This application is a tarot reading that is food themed. Upon entry to the site,
 Frequently asked questions can be found on the welcome page of the application. 
 
 ## Usage
-This application runs on github pages so there is no need to install anything. 
+This application runs on Github Pages; can directly utilize the site from the above link. 
 
 ## Contributors
 [Meet our Team!](admin/team.md)

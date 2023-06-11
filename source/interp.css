@@ -271,6 +271,7 @@ h4 {
 .recipe-container {
   display: flex;
   justify-content: center;
+  padding-bottom: 3.5vh;
 }
 
 .recipe-btn {

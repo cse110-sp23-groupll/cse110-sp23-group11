@@ -9,21 +9,27 @@ class Recipe extends HTMLElement {
       style.textContent = `
       .recipe-container {
         background-color: #f7f7f7;
-        padding: 20px;
+        padding-top: 3vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
       
       .name {
-        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 32px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         color: #333;
       }
       
       .author {
+        font-family: 'Lexend';
         font-style: italic;
-        color: #777;
+        font-size: 20px;
+        color: #666;
         margin-bottom: 15px;
       }
       
@@ -40,9 +46,11 @@ class Recipe extends HTMLElement {
         text-decoration: underline;
       }
       
-      .ingredients-title,
-      .method-title {
-        font-size: 18px;
+      .ingredients h3,
+      .method h3 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 24px;
         font-weight: bold;
         color: #333;
         margin-bottom: 5px;
@@ -50,6 +58,8 @@ class Recipe extends HTMLElement {
       
       .ingredients,
       .method {
+        font-family: 'Lexend';
+        font-style: normal;
         margin-bottom: 10px;
         color: #555;
       }
@@ -96,13 +106,13 @@ class Recipe extends HTMLElement {
       <a href=${data.url}>${data.url}</a>
     </p>
     <div class="ingredients">
-    <strong>Ingredients</strong>
+    <h3>Ingredients</h3>
     <ul>
       ${data.Ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
     </ul>
   </div>
   <div class="method">
-    <strong>Method</strong>
+    <h3>Method</h3>
     <ol>
       ${data.Method.map(step => `<li>${step}</li>`).join('')}
     </ol>

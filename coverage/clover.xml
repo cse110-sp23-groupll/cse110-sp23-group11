@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686466883465" clover="3.2.0">
-  <project timestamp="1686466883466" name="All files">
-    <metrics statements="2176" coveredstatements="0" conditionals="4211" coveredconditionals="0" methods="1275" coveredmethods="0" elements="7662" coveredelements="0" complexity="0" loc="2176" ncloc="2176" packages="15" files="34" classes="34"/>
+<coverage generated="1686468278717" clover="3.2.0">
+  <project timestamp="1686468278717" name="All files">
+    <metrics statements="2175" coveredstatements="13" conditionals="4211" coveredconditionals="1" methods="1275" coveredmethods="4" elements="7661" coveredelements="18" complexity="0" loc="2175" ncloc="2175" packages="15" files="34" classes="34"/>
     <package name="coverage.lcov-report">
       <metrics statements="120" coveredstatements="0" conditionals="329" coveredconditionals="0" methods="54" coveredmethods="0"/>
-      <file name="block-navigation.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\coverage\lcov-report\block-navigation.js">
+      <file name="block-navigation.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\coverage\lcov-report\block-navigation.js">
         <metrics statements="30" coveredstatements="0" conditionals="19" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -37,11 +37,11 @@
         <line num="83" count="0" type="stmt"/>
         <line num="87" count="0" type="stmt"/>
       </file>
-      <file name="prettify.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\coverage\lcov-report\prettify.js">
+      <file name="prettify.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\coverage\lcov-report\prettify.js">
         <metrics statements="1" coveredstatements="0" conditionals="286" coveredconditionals="0" methods="29" coveredmethods="0"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="286"/>
       </file>
-      <file name="sorter.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\coverage\lcov-report\sorter.js">
+      <file name="sorter.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\coverage\lcov-report\sorter.js">
         <metrics statements="89" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="19" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -136,7 +136,7 @@
     </package>
     <package name="out.scripts">
       <metrics statements="418" coveredstatements="0" conditionals="317" coveredconditionals="0" methods="141" coveredmethods="0"/>
-      <file name="core.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\core.js">
+      <file name="core.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\core.js">
         <metrics statements="258" coveredstatements="0" conditionals="94" coveredconditionals="0" methods="50" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -397,12 +397,12 @@
         <line num="652" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="653" count="0" type="stmt"/>
       </file>
-      <file name="core.min.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\core.min.js">
+      <file name="core.min.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\core.min.js">
         <metrics statements="2" coveredstatements="0" conditionals="90" coveredconditionals="0" methods="50" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="54"/>
         <line num="23" count="0" type="cond" truecount="0" falsecount="32"/>
       </file>
-      <file name="linenumber.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\linenumber.js">
+      <file name="linenumber.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\linenumber.js">
         <metrics statements="14" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -419,7 +419,7 @@
         <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="resize.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\resize.js">
+      <file name="resize.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\resize.js">
         <metrics statements="32" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
@@ -454,7 +454,7 @@
         <line num="84" count="0" type="stmt"/>
         <line num="89" count="0" type="stmt"/>
       </file>
-      <file name="search.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\search.js">
+      <file name="search.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\search.js">
         <metrics statements="110" coveredstatements="0" conditionals="58" coveredconditionals="0" methods="17" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -567,7 +567,7 @@
         <line num="262" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="263" count="0" type="stmt"/>
       </file>
-      <file name="search.min.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\search.min.js">
+      <file name="search.min.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\search.min.js">
         <metrics statements="2" coveredstatements="0" conditionals="57" coveredconditionals="0" methods="17" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="26"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="29"/>
@@ -575,12 +575,12 @@
     </package>
     <package name="out.scripts.prettify">
       <metrics statements="29" coveredstatements="0" conditionals="279" coveredconditionals="0" methods="26" coveredmethods="0"/>
-      <file name="lang-css.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\prettify\lang-css.js">
+      <file name="lang-css.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\prettify\lang-css.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
       </file>
-      <file name="prettify.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\prettify\prettify.js">
+      <file name="prettify.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\prettify\prettify.js">
         <metrics statements="27" coveredstatements="0" conditionals="279" coveredconditionals="0" methods="26" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="22"/>
@@ -613,11 +613,11 @@
     </package>
     <package name="out.scripts.third-party">
       <metrics statements="1323" coveredstatements="0" conditionals="3246" coveredconditionals="0" methods="998" coveredmethods="0"/>
-      <file name="fuse.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\fuse.js">
+      <file name="fuse.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\fuse.js">
         <metrics statements="1" coveredstatements="0" conditionals="581" coveredconditionals="0" methods="192" coveredmethods="0"/>
         <line num="9" count="0" type="cond" truecount="0" falsecount="581"/>
       </file>
-      <file name="hljs-line-num-original.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\hljs-line-num-original.js">
+      <file name="hljs-line-num-original.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\hljs-line-num-original.js">
         <metrics statements="138" coveredstatements="0" conditionals="64" coveredconditionals="0" methods="27" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
@@ -758,11 +758,11 @@
         <line num="365" count="0" type="stmt"/>
         <line num="366" count="0" type="cond" truecount="0" falsecount="2"/>
       </file>
-      <file name="hljs-line-num.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\hljs-line-num.js">
+      <file name="hljs-line-num.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\hljs-line-num.js">
         <metrics statements="1" coveredstatements="0" conditionals="62" coveredconditionals="0" methods="22" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="62"/>
       </file>
-      <file name="hljs-original.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\hljs-original.js">
+      <file name="hljs-original.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\hljs-original.js">
         <metrics statements="916" coveredstatements="0" conditionals="468" coveredconditionals="0" methods="174" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
@@ -1681,19 +1681,19 @@
         <line num="5168" count="0" type="stmt"/>
         <line num="5171" count="0" type="cond" truecount="0" falsecount="4"/>
       </file>
-      <file name="hljs.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\hljs.js">
+      <file name="hljs.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\hljs.js">
         <metrics statements="1" coveredstatements="0" conditionals="446" coveredconditionals="0" methods="157" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="446"/>
       </file>
-      <file name="popper.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\popper.js">
+      <file name="popper.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\popper.js">
         <metrics statements="1" coveredstatements="0" conditionals="585" coveredconditionals="0" methods="119" coveredmethods="0"/>
         <line num="5" count="0" type="cond" truecount="0" falsecount="585"/>
       </file>
-      <file name="tippy.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\tippy.js">
+      <file name="tippy.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\tippy.js">
         <metrics statements="1" coveredstatements="0" conditionals="639" coveredconditionals="0" methods="227" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="639"/>
       </file>
-      <file name="tocbot.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\tocbot.js">
+      <file name="tocbot.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\tocbot.js">
         <metrics statements="263" coveredstatements="0" conditionals="206" coveredconditionals="0" methods="42" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
@@ -1959,18 +1959,18 @@
         <line num="669" count="0" type="stmt"/>
         <line num="671" count="0" type="stmt"/>
       </file>
-      <file name="tocbot.min.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\out\scripts\third-party\tocbot.min.js">
+      <file name="tocbot.min.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\out\scripts\third-party\tocbot.min.js">
         <metrics statements="1" coveredstatements="0" conditionals="195" coveredconditionals="0" methods="38" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="195"/>
       </file>
     </package>
     <package name="source">
-      <metrics statements="108" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="25" coveredmethods="0"/>
-      <file name="eslint.config.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\eslint.config.js">
+      <metrics statements="108" coveredstatements="13" conditionals="16" coveredconditionals="1" methods="25" coveredmethods="4"/>
+      <file name="eslint.config.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\eslint.config.js">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
       </file>
-      <file name="interpPage.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\interpPage.js">
+      <file name="interpPage.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\interpPage.js">
         <metrics statements="68" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="319" count="0" type="stmt"/>
@@ -2041,23 +2041,23 @@
         <line num="527" count="0" type="stmt"/>
         <line num="528" count="0" type="stmt"/>
       </file>
-      <file name="recipe.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\recipe.js">
-        <metrics statements="13" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="104" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="106" count="0" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="118" count="0" type="stmt"/>
-        <line num="124" count="0" type="stmt"/>
-        <line num="131" count="0" type="stmt"/>
+      <file name="recipe.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\recipe.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="104" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="118" count="8" type="stmt"/>
+        <line num="124" count="5" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
       </file>
-      <file name="recipeGenerator.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\recipeGenerator.js">
+      <file name="recipeGenerator.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\recipeGenerator.js">
         <metrics statements="26" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -2089,7 +2089,7 @@
     </package>
     <package name="source.assets.scripts">
       <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="rando.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\assets\scripts\rando.js">
+      <file name="rando.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\assets\scripts\rando.js">
         <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -2107,9 +2107,9 @@
       </file>
     </package>
     <package name="source.script">
-      <metrics statements="53" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="shuffle.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\source\script\shuffle.js">
-        <metrics statements="53" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <metrics statements="52" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="shuffle.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\source\script\shuffle.js">
+        <metrics statements="52" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="94" count="0" type="stmt"/>
         <line num="95" count="0" type="stmt"/>
@@ -2143,31 +2143,30 @@
         <line num="152" count="0" type="stmt"/>
         <line num="155" count="0" type="stmt"/>
         <line num="156" count="0" type="stmt"/>
-        <line num="157" count="0" type="stmt"/>
+        <line num="164" count="0" type="stmt"/>
         <line num="165" count="0" type="stmt"/>
         <line num="166" count="0" type="stmt"/>
         <line num="167" count="0" type="stmt"/>
         <line num="168" count="0" type="stmt"/>
         <line num="169" count="0" type="stmt"/>
-        <line num="170" count="0" type="stmt"/>
+        <line num="171" count="0" type="stmt"/>
         <line num="172" count="0" type="stmt"/>
         <line num="173" count="0" type="stmt"/>
-        <line num="174" count="0" type="stmt"/>
+        <line num="182" count="0" type="stmt"/>
         <line num="183" count="0" type="stmt"/>
         <line num="184" count="0" type="stmt"/>
-        <line num="185" count="0" type="stmt"/>
-        <line num="187" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="188" count="0" type="stmt"/>
-        <line num="189" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="186" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="187" count="0" type="stmt"/>
+        <line num="188" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="189" count="0" type="stmt"/>
         <line num="190" count="0" type="stmt"/>
-        <line num="191" count="0" type="stmt"/>
+        <line num="192" count="0" type="stmt"/>
         <line num="193" count="0" type="stmt"/>
-        <line num="194" count="0" type="stmt"/>
       </file>
     </package>
     <package name="specs.Magic8Ball">
       <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8Ball\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8Ball\script.js">
         <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
@@ -2186,7 +2185,7 @@
     </package>
     <package name="specs.Magic8BallTest2">
       <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest2\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest2\script.js">
         <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -2207,7 +2206,7 @@
     </package>
     <package name="specs.Magic8BallTest3">
       <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest3\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest3\script.js">
         <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
@@ -2226,7 +2225,7 @@
     </package>
     <package name="specs.Magic8BallTest4">
       <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest4\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest4\script.js">
         <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -2247,7 +2246,7 @@
     </package>
     <package name="specs.Magic8BallTest5">
       <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest5\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest5\script.js">
         <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -2272,7 +2271,7 @@
     </package>
     <package name="specs.Magic8BallTest6(Harish)">
       <metrics statements="12" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="barrelroll.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest6(Harish)\barrelroll.js">
+      <file name="barrelroll.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest6(Harish)\barrelroll.js">
         <metrics statements="12" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -2290,7 +2289,7 @@
     </package>
     <package name="specs.Magic8BallTest7(Sophia)">
       <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest7(Sophia)\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest7(Sophia)\script.js">
         <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -2306,7 +2305,7 @@
     </package>
     <package name="specs.Magic8BallTest8(Thanh)">
       <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="script.js" path="C:\Users\hunte\Documents\cse110-sp23-group11\specs\Magic8BallTest8(Thanh)\script.js">
+      <file name="script.js" path="C:\Users\spart\Documents\GitHub\cse110-sp23-group11\specs\Magic8BallTest8(Thanh)\script.js">
         <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>

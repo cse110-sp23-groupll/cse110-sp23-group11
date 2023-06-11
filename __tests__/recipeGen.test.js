@@ -75,7 +75,7 @@ describe('Recipe Web Component Testing', () => {
 
     expect(el.shadowRoot.querySelector('.name').textContent.trim()).toBe(data.Name);
     expect(el.shadowRoot.querySelector('.author').textContent.trim()).toBe(data.Author);
-    expect(el.shadowRoot.querySelector('.url a').href).toBe(data.url);
+    expect(el.shadowRoot.querySelector('.url').getAttribute('action')).toBe(data.url);
     expect(el.shadowRoot.querySelector('.ingredients ul').textContent).toContain(data.Ingredients[0]);
     expect(el.shadowRoot.querySelector('.method ol').textContent).toContain(data.Method[0]);
     });

@@ -15,24 +15,27 @@ header {
   height: 8vh;
 }
 
-header button.exit {
+.exit {
   /* EXIT */
   margin: 1.5vh;
   background-color: transparent;
   border: none;
   cursor: pointer;
-
-  font-family: 'Lexend', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  text-align: center;
-  color: white;
 }
 
 .exit a {
+  font-family: 'Lexend', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
   text-decoration: none;
   color: white;
+}
+
+.exit:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 main {

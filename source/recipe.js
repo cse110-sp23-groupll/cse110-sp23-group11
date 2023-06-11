@@ -34,6 +34,7 @@ class Recipe extends HTMLElement {
       }
 
       #submit {
+        position: relative;
         color: black;
         font-family: 'Lexend', sans-serif;
         font-size: 16px;
@@ -47,6 +48,7 @@ class Recipe extends HTMLElement {
         padding: 10px 10px;
         background-color: #b9ddcc;
         cursor: pointer;
+        box-shadow: 0px 0px 10px rgb(136, 98, 27);
       }
 
       #submit:hover {

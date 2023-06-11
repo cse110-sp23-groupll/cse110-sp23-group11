@@ -244,5 +244,19 @@ if (playButton) {
 }
 });
 
+// Click sound
+document.addEventListener('DOMContentLoaded', (event) => {
+  const exitLink = document.getElementById('exitLink');
+  const audio = document.getElementById('buttonAudio');
 
+  exitLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      audio.play();
+      audio.onended = function() {
+          window.location.href = exitLink.href;
+      };
+  });
+
+  
+});
 

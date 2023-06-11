@@ -16,6 +16,14 @@ header {
   box-shadow: 5px 0px 20px black;
 }
 
+header img {
+  position: absolute;
+  top: 1vh;
+  right: 1.5vw;
+  width: 68px;
+  height: auto;
+}
+
 .head {
   margin-left: 30px;
 }
@@ -119,7 +127,6 @@ p{
   padding-right: 2vh;
   min-height: 60vh;
   min-width: 40vh;
-
 }
 
 #section2 .qa-inner {
@@ -130,7 +137,7 @@ p{
   border-radius: 10px;
   min-height: 60vh;
   max-height: 80vh;
-  width: 100%;
+  width: 95%;
   padding-left: 5vh;
   box-shadow: 5px 0px 40px;
 }
@@ -146,16 +153,16 @@ p{
   text-align: left;
   color: black;
   padding-left: 5vh;
-  padding-right: 5vh;
+  padding-right: 36%;
   font-size: 1em;
 }
 
-img {
+#section2 .qa-inner img {
   position: absolute;
   max-width: 15%;
   height: auto;
-  right: 30vh;
-  bottom: 22.5vh;
+  right: 12%;
+  bottom: 30%;
   box-shadow: 5px 0px 20px rgb(59, 38, 8);
 }
 

@@ -68,14 +68,19 @@ describe('Basic user flow of website', () => {
         expect(cardClicked).toEqual(true);    
     }, 5000);
 
-    // Click on third card, ensure it flips and pop-up appears
+    // Click on third card, ensure it flips
     it('Clicking a third card should flip it and should move to next page', async () => {
-        console.log('Clicking the card...'); 
+        console.log('Clicking the 3rd card, it should go to next page...'); 
         const src = await page.evaluate(() => {
             document.querySelector('div.row:nth-child(5) > div:nth-child(5) > img:nth-child(1)').click();
             const secondCardImg = document.querySelector('div.row:nth-child(5) > div:nth-child(5) > img:nth-child(2)');
             return secondCardImg.getAttribute('src');
         });
+        page.on("pageerror", (err) => {
+            console.log("Unhandled browser error:", err);
+
+            process.emit('uncaughtException', err);
+        })
         cardSrc3 = src.substring(27);
         console.log('This is the img: ', cardSrc3);
         await page.waitForNavigation();

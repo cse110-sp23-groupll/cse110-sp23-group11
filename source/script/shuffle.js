@@ -154,7 +154,6 @@ function toInterp() {
   }
   localStorage.setItem("audioPlay", 0);
   window.location.href = 'interpretation.html';
-  console.log(yay);
 }
 
 /**

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@900&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:wght@200&display=swap">
 	<link rel="icon" href="./assets/favicon.ico">
+	<script src="./scripts/welcome.js" type="module"></script>
 	<style>
 		html {
 			background-image: url(./assets/images/welcome.jpeg);
@@ -23,12 +24,14 @@
 <body>
 	<div id="fullpage">
 		<div class="section">
+			<audio id="buttonAudio" src="./assets/audios/click-button-140881.mp3" preload="auto"></audio>
 			<header>
 				<!-- Header with site name and team logo -->
 				<div class="head">
 					<h2>TAROT CARD READING</h2>
 					<img src="../admin/branding/team11_logo.png" alt="team logo">
 				</div>
+
 			</header>
 			<main>
 				<div class="content" id="section1">
@@ -36,7 +39,7 @@
 					<p>Get a Tarot Card reading and a delicious recipe!</p>
 					<!-- Start Button -->
 					<button>
-						<a href="cardSelection.html"><h3>START READING</h3></a>
+						<a id="link" href="cardSelection.html"><h3>START READING</h3></a>
 					</button>
 				</div>
 				<div class="fqa-line">

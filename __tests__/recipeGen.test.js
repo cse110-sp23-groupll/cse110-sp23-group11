@@ -6,7 +6,7 @@ global.document = window.document;
 global.customElements = window.customElements;
 global.HTMLElement = window.HTMLElement;
 
-require('../source/recipe');
+require('../source/scripts/recipe');
 
 // check if our recipe.json file is uploaded in localstorage
 describe('Testing Recipe Generator', () => {

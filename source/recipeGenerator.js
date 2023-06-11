@@ -61,5 +61,7 @@ function GenerateButtonHandler(button, recipeContainer) {
         const recipeData = await getRecipeFromStorage(randomizedIdx);
         recipeArticle.data = recipeData;
         main.appendChild(recipeArticle);
+
+        recipeArticle.scrollIntoView({ behavior: 'smooth' });
     });
 }

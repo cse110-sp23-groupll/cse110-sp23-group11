@@ -1,6 +1,6 @@
 # Rules
-A lot of the files are failing default/reccomended configurations so I made our own rules. I will give a brief description of the rules in this
-document but I will give links to a rulesheet with better descriptions. 
+The superlinter has default/recommended rules for linting. These rules are too strict so we will not be using them and will instead be using our own rules. I will give a brief description of the rules in this
+document but I will give links to a rulesheet with better descriptions. Mo
 
 ## CSS rules https://stylelint.io/user-guide/rules
 1. color-no-invalid-hex : Invalid hex colors are not allowed. 
@@ -19,4 +19,4 @@ document but I will give links to a rulesheet with better descriptions.
 7. tagname-lowercase: All tags must be lowercase. 
 
 ## Javascript rules https://eslint.org/docs/latest/rules/
-All of the reccomended rules(marked with green checkmark) are enablded. 
+All of the recommended rules(marked with green checkmark) are enablded. The recommended rules are not too restricting on code style so they will be used. 

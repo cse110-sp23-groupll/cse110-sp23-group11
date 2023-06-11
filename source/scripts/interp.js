@@ -2,12 +2,14 @@
  * Card Information in JSON format
  * @type {JSON}
  */ 
-const cardData = {
+ const cardData = {
   "The Fool": {
       "Description": "The first card of the Major Arcana, The Fool is generally a positive card indicating new beginnings.",
       "Source": "assets\\UniformResolution\\TheFool.png",
       "Interpretation": "Your new adventure will bring you along a path which may require you to make a leap of faith but you will grow as a result of this new experience.",
-      "Value": 1
+      "Value": 1,
+     
+
     },
   
   "The Fool (Reversed)": {
@@ -395,6 +397,9 @@ const content = document.getElementById('content');
 expandButton.addEventListener('click', () => {
   content.classList.toggle('show-content');
   
+  // Play the click sound
+  buttonAudio.play();
+
   if (content.classList.contains('show-content')) {
     const buttonOffsetTop = expandButton.offsetTop;
     const scrollHeight = content.offsetTop - buttonOffsetTop + 400;
@@ -492,6 +497,10 @@ function randomInterp(cardNames) {
  */
 function flipCard() {
   this.classList.toggle("is-flipped");
+
+  // Play Flip-card sound
+  const flipSound = new Audio("./assets/audios/flipcard-91468.mp3");
+  flipSound.play();
 }
 
 /**
@@ -515,5 +524,29 @@ document.addEventListener("DOMContentLoaded", function() {
       audio.pause();
       playIcon.src = "./assets/images/mute.png";
     }
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const exitLink = document.getElementById('exitLink');
+  const newReadingLink = document.getElementById('nReadingLink');
+  const audio = document.getElementById('buttonAudio');
+
+  exitLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      audio.play();
+      audio.onended = function() {
+          window.location.href = exitLink.href;
+      };
+  });
+
+  newReadingLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      audio.play();
+      audio.onended = function() {
+          window.location.href = newReadingLink.href;
+      };
   });
 });

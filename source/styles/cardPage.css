@@ -16,7 +16,7 @@ main {
 }
 
 .font-with-border {
-  font-size: 60px;
+  font-size: 350%;
   -webkit-text-fill-color: rgb(255, 255, 255); /* Specify font color */
   font-family: 'Roboto', sans-serif;
 }

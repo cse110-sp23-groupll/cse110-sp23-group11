@@ -1,7 +1,7 @@
 describe('Testing Card Page', () => {
     // First, visit the card page
     beforeAll(async () => {
-      await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html');
+      await page.goto('https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/cardSelection.html');
     });
   
     // Check to make sure that clicking 'EXIT' takes the user to the start page

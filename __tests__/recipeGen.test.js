@@ -51,7 +51,7 @@ describe('Recipe Web Component Testing', () => {
     const data = {
         "Author": "Seonghun",
         "Description": "Delicious homemade spaghetti.",
-        "url": "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html",
+        "url": "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/cardSelection.html",
         "Ingredients": [
             "200g spaghetti",
             "1 tbsp olive oil",

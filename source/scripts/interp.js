@@ -380,25 +380,13 @@ setCardProp();
 
 // Plays audio if transitioning from the card selection page
 if (parseInt(localStorage.getItem("audioPlay")) == 0) {
-  const tada = new Audio("audios\\tada.mp3");
+  const tada = new Audio("./assets/audios/tada.mp3");
   tada.volume = 0.75;
   tada.play();
   localStorage.setItem("audioPlay", 1);
 }
 
 cards.forEach(card => card.addEventListener("click", flipCard));
-
-// Exit page button redirects to the welcome page
-const exitButton = (document.getElementsByClassName("exit"))[0];
-exitButton.addEventListener('click', () => {
-  window.location.href = "welcome.html";
-})
-
-// New reading button redirects to the card selection page
-const newReadingButton = (document.getElementsByClassName("newReading"))[0];
-newReadingButton.addEventListener('click', () => {
-  window.location.href = "card-page.html";
-})
 
 // Expand the page for recipe content
 const expandButton = document.getElementById('expand-btn');
@@ -522,10 +510,10 @@ document.addEventListener("DOMContentLoaded", function() {
   playButton.addEventListener("click", function() {
     if (audio.paused) {
       audio.play();
-      playIcon.src = "./images/unmute.png";
+      playIcon.src = "./assets/images/unmute.png";
     } else {
       audio.pause();
-      playIcon.src = "./images/mute.png";
+      playIcon.src = "./assets/images/mute.png";
     }
   });
 });

@@ -187,10 +187,10 @@ document.addEventListener("DOMContentLoaded", function() {
     playButton.addEventListener("click", function() {
       if (audio.paused) {
         audio.play();
-        playIcon.src = "./images/unmute.png";
+        playIcon.src = "./assets/images/unmute.png";
       } else {
         audio.pause();
-        playIcon.src = "./images/mute.png";
+        playIcon.src = "./assets/images/mute.png";
       }
     });
   }

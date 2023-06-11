@@ -78,6 +78,10 @@ header img {
   color: black;
 }
 
+#section1 button:hover {
+  background-color: #91c0aa;
+}
+
 .fqa-line {
   text-align: center;
   position: relative;

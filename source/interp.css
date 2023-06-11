@@ -86,6 +86,10 @@ main button.newReading {
   color: #342007;
 }
 
+.newReading:hover {
+  background-color: #af6060;
+}
+
 main h1 {
   /* Results */
   font-family: 'Roboto', sans-serif;

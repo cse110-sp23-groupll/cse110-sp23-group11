@@ -8,17 +8,12 @@ describe('Basic user flow of website', () => {
     // Check to make sure that clicking 'START READING' takes you to the next page
     it('Clicking \'START READING\' it should go to the next page', async () => {
         console.log('Clicking the button...'); 
-        /*
-        await page.evaluate(() => {
-            document.querySelector('#section1 > button:nth-child(3) > a:nth-child(1)').click(); 
-        }); */
         await Promise.all([
             page.$eval('#section1 > button:nth-child(3) > a:nth-child(1)', element =>
               element.click()
             ),
             await page.waitForNavigation(),
         ]);
-        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
@@ -73,14 +68,19 @@ describe('Basic user flow of website', () => {
         expect(cardClicked).toEqual(true);    
     }, 5000);
 
-    // Click on third card, ensure it flips and pop-up appears
+    // Click on third card, ensure it flips
     it('Clicking a third card should flip it and should move to next page', async () => {
-        console.log('Clicking the card...'); 
+        console.log('Clicking the 3rd card, it should go to next page...'); 
         const src = await page.evaluate(() => {
             document.querySelector('div.row:nth-child(5) > div:nth-child(5) > img:nth-child(1)').click();
             const secondCardImg = document.querySelector('div.row:nth-child(5) > div:nth-child(5) > img:nth-child(2)');
             return secondCardImg.getAttribute('src');
         });
+        page.on("pageerror", (err) => {
+            console.log("Unhandled browser error:", err);
+
+            process.emit('uncaughtException', err);
+        })
         cardSrc3 = src.substring(27);
         console.log('This is the img: ', cardSrc3);
         await page.waitForNavigation();
@@ -158,17 +158,12 @@ describe('Basic user flow of website', () => {
     it('Clicking \'New Reading\' goes to first page', async () => {
         console.log('THIS IS THE LINK BEFORE PRESSING EXIT: ', await page.url());
         console.log('Clicking the button...'); 
-        /*
-        await page.evaluate(() => {
-            document.querySelector('.newReading > a:nth-child(1) > p:nth-child(1)').click(); 
-        }); */
         await Promise.all([
             page.$eval('.newReading > a:nth-child(1) > p:nth-child(1)', element =>
               element.click()
             ),
             await page.waitForNavigation(),
         ]);
-        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
@@ -306,17 +301,12 @@ describe('Basic user flow of website', () => {
     it('Clicking \'EXIT\' goes to first page', async () => {
         console.log('THIS IS THE LINK BEFORE PRESSING EXIT: ', await page.url());
         console.log('Clicking the button...'); 
-        /*
-        await page.evaluate(() => {
-            document.querySelector('.exit > a:nth-child(1) > p:nth-child(1)').click(); 
-        }); */
         await Promise.all([
-            page.$eval('.exit > a:nth-child(1) > p:nth-child(1)', element =>
+            page.$eval('.exit > a:nth-child(1)', element =>
               element.click()
             ),
             await page.waitForNavigation(),
         ]);
-        //await page.waitForNavigation();
         const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);

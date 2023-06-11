@@ -15,7 +15,7 @@ describe('Testing Card Page', () => {
         console.log('ELEMENT NOT FOUND?');
       }
       await page.evaluate(() => {
-        document.querySelector('body > header > nav > a').click(); 
+        document.querySelector('.exit > a:nth-child(1)').click(); 
       }); 
       await page.waitForNavigation();
       const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html";

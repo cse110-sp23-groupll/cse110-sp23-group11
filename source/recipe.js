@@ -32,18 +32,25 @@ class Recipe extends HTMLElement {
         color: #666;
         margin-bottom: 15px;
       }
-      
-      .url {
-        margin-bottom: 15px;
+
+      #submit {
+        color: black;
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        text-align: center;
+
+        width: 8vw;
+        height: 5vh;
+
+        border: none;
+        border-radius: 100px;
+        padding: 10px 10px;
+        background-color: #b9ddcc;
+        cursor: pointer;
       }
-      
-      .url a {
-        color: #1835d0;
-        text-decoration: none;
-      }
-      
-      .url a:hover {
-        text-decoration: underline;
+
+      #submit:hover {
+        background-color: #94b3a4;
       }
       
       .ingredients h3,
@@ -102,9 +109,9 @@ class Recipe extends HTMLElement {
       ${data.Name}
     </p>
     <p class="author">${data.Author}</p>
-    <p class="url">
-      <a href=${data.url}>${data.url}</a>
-    </p>
+    <form class="url" action="${data.url}">
+      <input type="submit" value="WEBSITE" id="submit"/>
+    </form>
     <div class="ingredients">
     <h3>Ingredients</h3>
     <ul>

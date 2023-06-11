@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/50</span>
+                <span class='fraction'>0/54</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>0/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/48</span>
+                <span class='fraction'>0/52</span>
             </div>
         
             
@@ -251,7 +251,16 @@
 <a name='L186'></a><a href='#L186'>186</a>
 <a name='L187'></a><a href='#L187'>187</a>
 <a name='L188'></a><a href='#L188'>188</a>
-<a name='L189'></a><a href='#L189'>189</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -402,6 +411,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -425,6 +439,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -436,6 +453,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -587,8 +605,13 @@ let drawCardResult = <span class="cstat-no" title="statement not covered" >[];</
  */
 function <span class="fstat-no" title="function not covered" >toInterp(</span>) {
   // Ensure that the following localStorage items are only cleared after a new reading has been completed
-<span class="cstat-no" title="statement not covered" >  localStorage.removeItem("interpretation");</span>
-<span class="cstat-no" title="statement not covered" >  localStorage.removeItem("recipeIndex");</span>
+<span class="cstat-no" title="statement not covered" >  keyItems = ["interpretation", "recipeIndex"];</span>
+<span class="cstat-no" title="statement not covered" >  for (const key of keyItems) {</span>
+<span class="cstat-no" title="statement not covered" >    if (localStorage.getItem(key) != null) {</span>
+<span class="cstat-no" title="statement not covered" >      localStorage.removeItem(key)</span>
+    }
+  }
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem("audioPlay", 0);</span>
 <span class="cstat-no" title="statement not covered" >  window.location.href = 'interpretation.html';</span>
 }
 &nbsp;
@@ -610,23 +633,27 @@ function <span class="fstat-no" title="function not covered" >shuffle(</span>arr
   }
 }
 /**
+ * this is the button to toggle music on or off on the page
+ * the music is not playing bu default
  * @type {audio} the backgroundMusic
- * @type {button} this toggle button should toggle music on or off
+ * @type {playButton} this toggle button should toggle music on or off
  */
-let audio = <span class="cstat-no" title="statement not covered" >document.getElementById("myAudio");</span>
-let toggleButton = <span class="cstat-no" title="statement not covered" >document.getElementById("toggleButton");</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >if(toggleButton){</span>
-<span class="cstat-no" title="statement not covered" >  toggleButton.addEventListener("click", <span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
-<span class="cstat-no" title="statement not covered" >    if (audio.paused) {</span>
-<span class="cstat-no" title="statement not covered" >      audio.play();</span>
-<span class="cstat-no" title="statement not covered" >      toggleButton.innerHTML = "Pause Music";</span>
-    } else {
-<span class="cstat-no" title="statement not covered" >      audio.pause();</span>
-<span class="cstat-no" title="statement not covered" >      toggleButton.innerHTML = "Play Music";</span>
-    }
-  });
-}
+<span class="cstat-no" title="statement not covered" >document.addEventListener("DOMContentLoaded", <span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+  var audio = <span class="cstat-no" title="statement not covered" >document.getElementById("myAudio");</span>
+  var playButton = <span class="cstat-no" title="statement not covered" >document.getElementById("playButton");</span>
+  
+<span class="cstat-no" title="statement not covered" >  if (playButton) {</span>
+<span class="cstat-no" title="statement not covered" >    playButton.addEventListener("click", <span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >      if (audio.paused) {</span>
+<span class="cstat-no" title="statement not covered" >        audio.play();</span>
+<span class="cstat-no" title="statement not covered" >        playIcon.src = "./images/unmute.png";</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        audio.pause();</span>
+<span class="cstat-no" title="statement not covered" >        playIcon.src = "./images/mute.png";</span>
+      }
+    });
+  }
+});
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -634,7 +661,7 @@ let toggleButton = <span class="cstat-no" title="statement not covered" >documen
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-06-10T18:45:00.498Z
+                at 2023-06-11T07:24:38.578Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

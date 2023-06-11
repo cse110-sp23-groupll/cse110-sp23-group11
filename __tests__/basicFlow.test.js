@@ -14,7 +14,7 @@ describe('Basic user flow of website', () => {
             ),
             await page.waitForNavigation(),
         ]);
-        const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
+        const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/cardSelection.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
         expect(buttonClicked).toEqual(url);  
@@ -164,7 +164,7 @@ describe('Basic user flow of website', () => {
             ),
             await page.waitForNavigation(),
         ]);
-        const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/card-page.html";
+        const url = "https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/cardSelection.html";
         const buttonClicked = await page.url();
         console.log('THIS IS THE CURRENT LINK: ', buttonClicked);
         expect(buttonClicked).toEqual(url);  

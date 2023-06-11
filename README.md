@@ -1,6 +1,6 @@
 # Our Project: Tarot-Reading Food Edition!
 
-This application is a tarot reading that is food themed. The application is currently a work in progress.
+This application is a tarot reading that is food themed. Upon entry to the site, the user will be greeted with a welcome page, from which they can begin selecting cards to determine their fortune. After three cards are selected (one representing the user's past, one for the present, and another for the future), a fortune is generated.
 
 ## Our App
 [Welcome Page!](https://cse110-sp23-groupll.github.io/cse110-sp23-group11/source/welcome.html)

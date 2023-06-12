@@ -22,6 +22,8 @@ Fonts from https://fonts.googleapis.com/css2?family=Chango&display=swap
 ## Documentation
 [JSDocs](https://cse110-sp23-groupll.github.io/cse110-sp23-group11/out/index.html)
 
+Theme Credit: [clean-jsdoc-theme](https://ankdev.me/clean-jsdoc-theme/v4/)
+
 ## Project Dependencies
 The project dependencies can be found here https://github.com/cse110-sp23-groupll/cse110-sp23-group11/network/dependencies
 

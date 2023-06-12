@@ -39,7 +39,16 @@ All team members are expected to:
 * Speak up about anything you want to address, and other members should be open and understanding
 
 ## **5) Specific Team Member Responsibilities**
-*TBD: will be discussed as we get more into the project*
+- Thanh Nguyen: Frontend developer working on the interpretation page
+- Seonghun Oh: Backend developer working on the recipe section of the interpretation page
+- Cathy Shu: Frontend developer working on the home and card selection pages
+- Hunter Trieu: Designer and tester for the whole website
+- Harish Vasanth: Backend developer working on the interpretation page
+- Vincent Vo: Frontend developer working on the recipes section of the interpretation page as well as the CI/CD pipeline
+- Junyi Wu: Team lead and frontend developer working on the home and card selection pages
+- Jennifer Yu: Team lead and backend developer working on the recipes section of the interpretation page
+- Sophia Yu: Designer and tester for the whole website
+- Angelia Zhang: Backend developer working on the home and card selection pages
 
 ## **6) Conflict Resolution**
 Team members will resolve conflict amongst themselves first. If it cannot get resolved, go to team leads. If conflict still cannot get resolved, team will contact TA.

@@ -103,7 +103,7 @@ class Recipe extends HTMLElement {
       </p>
       <p class="author">${data.Author}</p>
       <form class="url" action="${data.url}">
-        <input type="submit" value="WEBSITE" id="submit"/>
+        <input type="submit" value="WEBSITE" id="submit" onclick ="new Audio('./assets/audios/click-button-140881.mp3').play()"/>
       </form>
       <div class="ingredients">
         <h3>Ingredients</h3>

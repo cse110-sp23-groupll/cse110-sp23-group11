@@ -303,13 +303,13 @@ h4 {
   background-size: contain;
   block-size: auto;
   min-height: 100px; /* Minimum height of the box */
-  max-height: 1000px; /* Maximum height of the box */
-  transition: height 0.3s ease;
   padding: 20px;
 }
+
 .expanded {
-  height: 200vh;
+  height: 500vh;
 }
+
 .show-content {
   display: block;
 }

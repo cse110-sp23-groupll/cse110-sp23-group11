@@ -7,15 +7,6 @@ class Recipe extends HTMLElement {
       const style = document.createElement('style');
       // put any custom style css for article of recipe
       style.textContent = `
-      .recipe-container {
-        background-color: #f7f7f7;
-        padding-top: 3vh;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      
       .name {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -108,25 +99,25 @@ class Recipe extends HTMLElement {
       const article = this.shadowRoot.querySelector('article');
       article.innerHTML = `
       <p class="name">
-      ${data.Name}
-    </p>
-    <p class="author">${data.Author}</p>
-    <form class="url" action="${data.url}">
-      <input type="submit" value="WEBSITE" id="submit"/>
-    </form>
-    <div class="ingredients">
-    <h3>Ingredients</h3>
-    <ul>
-      ${data.Ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-    </ul>
-  </div>
-  <div class="method">
-    <h3>Method</h3>
-    <ol>
-      ${data.Method.map(step => `<li>${step}</li>`).join('')}
-    </ol>
-  </div>
-    `;
+        ${data.Name}
+      </p>
+      <p class="author">${data.Author}</p>
+      <form class="url" action="${data.url}">
+        <input type="submit" value="WEBSITE" id="submit"/>
+      </form>
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          ${data.Ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="method">
+        <h3>Method</h3>
+        <ol>
+          ${data.Method.map(step => `<li>${step}</li>`).join('')}
+        </ol>
+      </div>
+      `;
     }
   }
 

@@ -12,7 +12,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 8vh;
+  height: 5vh;
 }
 
 .exit {
@@ -96,7 +96,7 @@ main h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 65px;
-  margin-top: -6vh;
+  margin-top: -4vh;
   margin-bottom: 2.5vh;
 
   /* identical to box height */

@@ -22,6 +22,9 @@ Fonts from https://fonts.googleapis.com/css2?family=Chango&display=swap
 ## Documentation
 [JSDocs](https://cse110-sp23-groupll.github.io/cse110-sp23-group11/out/index.html)
 
+## Project Dependencies
+The project dependencies can be found here https://github.com/cse110-sp23-groupll/cse110-sp23-group11/network/dependencies
+
 ## Other Credits
 Card descrptions and interpretations from [The Tarot Guide](https://www.thetarotguide.com/)
 

@@ -18,7 +18,7 @@ header {
 
 header img {
   position: absolute;
-  top: 1vh;
+  top: 10%;
   right: 1.5vw;
   width: 68px;
   height: auto;
@@ -139,9 +139,12 @@ p{
   text-align: left;
   padding: 20px;
   border-radius: 10px;
-  min-height: 60vh;
-  max-height: 80vh;
+  /*min-height: 60vh;*/
+  /*max-height: 80vh;*/
+  height: auto;
   width: 95%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   padding-left: 5vh;
   box-shadow: 5px 0px 40px;
 }
@@ -166,7 +169,7 @@ p{
   max-width: 15%;
   height: auto;
   right: 12%;
-  bottom: 30%;
+  top: 40%;
   box-shadow: 5px 0px 20px rgb(59, 38, 8);
 }
 

@@ -1,5 +1,5 @@
 # Super Linter Docs
-The super linter is a collection of linters. Currently, the linters being used are styelint(css), eslint(javascript), and htmlhint(html).
+The super linter is a collection of linters. With the way the linter is configured, the linter will only lint files in the source folder every time someone makes a push. Currently, the linters being used are styelint(css), eslint(javascript), and htmlhint(html).
 
 ## Editing the Super Linter
 If you want to add more linters, change linting paths, or just modify anything, you can change the enviornment variables in Super-Linter.yml. They 

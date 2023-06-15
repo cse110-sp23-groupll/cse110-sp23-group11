@@ -39,3 +39,8 @@ Card selection page uses [Cooking Mama music](https://www.youtube.com/watch?v=ua
 Transition to interpretation page uses [Ta-Da sound effect](https://www.youtube.com/watch?v=dAVzcGcVecU)
 
 Sound effects for buttons and card flips from [Pixabay](https://pixabay.com/sound-effects/)
+
+## Video Link
+
+[Private Version](https://www.youtube.com/watch?v=SuYYKEhkgaY)
+[Public Version](https://youtu.be/GxqtIpePXLU)

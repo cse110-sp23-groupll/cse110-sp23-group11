@@ -42,5 +42,5 @@ Sound effects for buttons and card flips from [Pixabay](https://pixabay.com/soun
 
 ## Video Link
 
-[Private Version](https://www.youtube.com/watch?v=SuYYKEhkgaY)
+[Private Version](https://www.youtube.com/watch?v=SuYYKEhkgaY)  
 [Public Version](https://youtu.be/GxqtIpePXLU)
